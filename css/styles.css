@@ -966,7 +966,7 @@ body {
 }
 .treatment .treat-label {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 37px;
 }
 .treatment .treat-label span {
   display: block;
@@ -980,7 +980,9 @@ body {
   letter-spacing: 2.2px;
 }
 .treatment .treat-desc {
-  margin-bottom: 30px;
+  max-width: 1000px;
+  margin: 0 auto 30px;
+  letter-spacing: 0.4px;
 }
 
 /*===================== end Top Content ========================*/
