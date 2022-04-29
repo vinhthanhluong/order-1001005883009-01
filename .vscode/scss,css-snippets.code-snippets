@@ -1,0 +1,142 @@
+{
+	"translateX": {
+		"scope": "css,less,scss",
+		"prefix": "l50",
+		"body": ["position: absolute;","top:$1;", "left: 50%;","transform: translateX(-50%);", "$0"]
+	},
+	"translateY": {
+		"scope": "css,less,scss",
+		"prefix": "t50",
+		"body": [ "position: absolute;", "top: 50%;","left:$1;","transform: translateY(-50%);", "$0"]
+	},
+	"translate": {
+		"scope": "css,less,scss",
+		"prefix": "tc",
+		"body": [ "position: absolute;","top:50%;","left:50%;","transform: translate(-50%,-50%);", "$0"]
+	},
+
+	"wh": {
+		"scope": "css,less,scss",
+		"prefix": "wh",
+		"body": ["width: $1;", "height: $1;"]
+	},
+	"before": {
+		"scope": "css,less,scss",
+		"prefix": "bf",
+		"body": [
+			"position: absolute;",
+			"content: '';",
+			"top: 50%;",
+			"left: 0;",
+			"transform: translateY(-50%);",
+			"width: $1;",
+			"height: $1;",
+			"background: url(../$2) no-repeat center/contain;",
+		]
+	},
+	"fontnoto": {
+		"scope": "css,less,scss",
+		"prefix": "fontnoto",
+		"body": ["font-family: 'Noto Sans JP', sans-serif;"]
+	},
+	"fontnotoserif": {
+		"scope": "css,less,scss",
+		"prefix": "fontnotoserif",
+		"body": ["font-family: 'Noto Serif JP', serif;"]
+	},
+	"fontcentury": {
+		"scope": "css,less,scss",
+		"prefix": "fontcentury",
+		"body": ["font-family: 'Century Gothic', CenturyGothic, sans-serif;"]
+	},
+	"fontyugothic": {
+		"scope": "css,less,scss",
+		"prefix": "fontyugothic",
+		"body": ["font-family: '游ゴシック体', 'Yu Gothic', YuGothic, sans-serif;"]
+	},
+	"fontlato": {
+		"scope": "css,less,scss",
+		"prefix": "fontlato",
+		"body": ["font-family: 'Lato', sans-serif;"]
+	},
+	"fontmr": {
+		"scope": "css,less,scss",
+		"prefix": "fontmr",
+		"body": ["font-family: 'Mr De Haviland', cursive;"]
+	},
+	"fonthome": {
+		"scope": "css,less,scss",
+		"prefix": "fonthome",
+		"body": ["font-family: 'Homemade Apple', cursive;"]
+	},
+	"fontcoustard": {
+		"scope": "css,less,scss",
+		"prefix": "fontcoustard",
+		"body": ["font-family: 'Coustard', serif;"]
+	},
+	"fontoxy": {
+		"scope": "css,less,scss",
+		"prefix": "fontoxy",
+		"body": ["font-family: 'Oxygen', sans-serif;"]
+	},
+	"fontpuritan": {
+		"scope": "css,less,scss",
+		"prefix": "fontpuritan",
+		"body": ["font-family: 'Puritan', sans-serif;"]
+	},
+	"fontpop": {
+		"scope": "css,less,scss",
+		"prefix": "fonthome",
+		"body": ["font-family: 'Poppins', sans-serif;"]
+	},
+	"fontrobo": {
+		"scope": "css,less,scss",
+		"prefix": "fontrobo",
+		"body": ["font-family: 'Roboto', sans-serif;"]
+	},
+	"fontround1c": {
+		"scope": "css,less,scss",
+		"prefix": "fontround1c",
+		"body": ["font-family: 'M PLUS Rounded 1c', sans-serif;"]
+	},
+	"fontspectral ": {
+		"scope": "css,less,scss",
+		"prefix": "fontspectral",
+		"body": ["font-family: 'Spectral', serif;"]
+	},
+	"fontinria": {
+		"scope": "css,less,scss",
+		"prefix": "fontinria",
+		"body": ["font-family: 'Inria Serif', serif;"]
+	},
+	"fontcrimon": {
+		"scope": "css,less,scss",
+		"prefix": "fontcrimon",
+		"body": ["font-family: 'Crimson Pro', serif;"]
+	},
+	"lh15": {
+		"scope": "css,less,scss",
+		"prefix": "lh15",
+		"body": ["line-height: 1.5em;"]
+	},
+	"lh0": {
+		"scope": "css,less,scss",
+		"prefix": "lh0",
+		"body": ["line-height: 1.5em;"]
+	},
+	"textcen": {
+		"scope": "css,less,scss",
+		"prefix": "textcen",
+		"body": ["text-align: center;"]
+	},
+	
+
+	
+	"textdecor": {
+		"scope": "css,less,scss",
+		"prefix": "textdecor",
+		"body": ["text-decoration:none;"]
+	},
+	
+	
+}

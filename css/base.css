@@ -1,0 +1,327 @@
+/* Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+   Code licensed under the BSD License:
+   http://developer.yahoo.net/yui/license.txt
+   version: 2.7.0
+*/
+
+html {
+	color: #000;
+	background: #fff;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: none;
+}
+fieldset, img {
+	border: 0;
+}
+address, caption, cite, code, dfn, em, strong, th, var, optgroup {
+	font-style: normal;
+	font-weight: normal;
+}
+del, ins {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+caption, th {
+	text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+	line-height: 1.0;
+}
+q:before, q:after {
+	content: '';
+}
+abbr, acronym {
+	border: 0;
+	font-variant: normal;
+}
+abbr {
+	cursor: help;
+}
+label {
+	cursor: pointer;
+}
+sup {
+	vertical-align: baseline;
+}
+sub {
+	vertical-align: baseline;
+}
+/*because legend doesn't inherit in IE */
+legend {
+	color: #000;
+}
+input, button, textarea, select, optgroup, option {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+}
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input, button, textarea, select {
+*font-size: 100%;
+}
+/* Setting
+------------------------------------------------------------------------*/
+
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+th, td {
+	border: 1px solid #e1e1e0;
+	padding: 1em;
+}
+th {
+	font-weight: bold;
+	text-align: center;
+	background-color: #46BD9C;
+	color: #fff;
+}
+caption {
+	padding-bottom: .5em;
+	text-align: right;
+}
+dfn {
+	font-style: normal;
+}
+address {
+	font-style: normal;
+	line-height: 1.0;
+}
+.clear {
+	clear: both;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	font-size: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+/* End hide from IE-mac */
+
+.left {
+	text-align: left;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+/* add
+------------------------------------------------------------------------*/
+.mb0 {
+	margin-bottom : 0!important;
+}
+.mb05 {
+	margin-bottom : 5px!important;
+}
+.mb07 {
+	margin-bottom : 7px!important;
+}
+.mb10 {
+	margin-bottom : 10px!important;
+}
+.mb15 {
+	margin-bottom : 15px!important;
+}
+.mb20 {
+	margin-bottom : 20px!important;
+}
+.mb25 {
+	margin-bottom : 25px!important;
+}
+.mb28 {
+	margin-bottom : 28px!important;
+}
+.mb30 {
+	margin-bottom : 30px!important;
+}
+.mb35 {
+	margin-bottom : 35px!important;
+}
+.mb40 {
+	margin-bottom : 40px!important;
+}
+.mb50 {
+	margin-bottom : 50px!important;
+}
+.mr0 {
+	margin-right : 0!important;
+}
+.mr05 {
+	margin-right : 5px!important;
+}
+.mr10 {
+	margin-right : 10px!important;
+}
+.mr15 {
+	margin-right : 15px!important;
+}
+.mr20 {
+	margin-right : 20px!important;
+}
+.mr25 {
+	margin-right : 25px!important;
+}
+.mr30 {
+	margin-right : 30px!important;
+}
+.mt0 {
+	margin-top : 0!important;
+}
+.mt05 {
+	margin-top : 5px!important;
+}
+.mt10 {
+	margin-top : 10px!important;
+}
+.mt15 {
+	margin-top : 15px!important;
+}
+.mt20 {
+	margin-top : 20px!important;
+}
+.mt25 {
+	margin-top : 25px!important;
+}
+.mt30 {
+	margin-top : 30px!important;
+}
+.mt45 {
+	margin-top: 45px !important;
+}
+.mt50 {
+	margin-top: 50px !important;
+}
+.mt55 {
+	margin-top: 55px !important;
+}
+.ml0 {
+	margin-left : 0!important;
+}
+.ml05 {
+	margin-left : 5px!important;
+}
+.ml10 {
+	margin-left : 10px!important;
+}
+.ml15 {
+	margin-left : 15px!important;
+}
+.ml20 {
+	margin-left : 20px!important;
+}
+.ml25 {
+	margin-left : 25px!important;
+}
+.ml30 {
+	margin-left : 30px!important;
+}
+.pt0 {
+	padding-top: 0px!important;
+}
+.pt5 {
+	padding-top: 5px!important;
+}
+.pt10 {
+	padding-top: 10px!important;
+}
+.pt15 {
+	padding-top: 15px!important;
+}
+.pt20 {
+	padding-top: 20px!important;
+}
+.pt25 {
+	padding-top: 25px!important;
+}
+.pt30 {
+	padding-top: 30px!important;
+}
+.pb0 {
+	padding-bottom: 0px!important;
+}
+.pb5 {
+	padding-bottom: 5px!important;
+}
+.pb10 {
+	padding-bottom: 10px!important;
+}
+.pb15 {
+	padding-bottom: 15px!important;
+}
+.pb20 {
+	padding-bottom: 20px!important;
+}
+.pb25 {
+	padding-bottom: 25px!important;
+}
+.pb30 {
+	padding-bottom: 30px!important;
+}
+.pb40 {
+	padding-bottom: 40px!important;
+}
+.pb50 {
+	padding-bottom: 50px!important;
+}
+.w5 {
+	width: 5%;
+}
+.w10 {
+	width: 10%;
+}
+.w15 {
+	width: 15%;
+}
+.w20 {
+	width: 20%;
+}
+.w25 {
+	width: 25%;
+}
+.w30 {
+	width: 30%;
+}
+.w35 {
+	width: 35%;
+}
+.w40 {
+	width: 40%;
+}
+.w45 {
+	width: 45%;
+}
+.w50 {
+	width: 50%;
+}
+.w100 {
+	width: 100%;
+}

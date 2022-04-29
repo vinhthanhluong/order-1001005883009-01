@@ -1,0 +1,110 @@
+
+
+@media screen and (min-width: 751px) {
+	// .menu_icon{
+	// 	display:none;
+	// }
+	.sp {
+		display: none;
+	}
+	.sp640,.sp475, .sp425, .sp414, .sp375, .sp320{
+		display: none;
+	}
+}
+@media screen and (max-width:750px) {
+	h1, h2, h3, h4, h5, h6, input, button, textarea, select, p, blockquote, th, td, pre, address, li, dt, dd {
+	    font-size: 140%;
+	}
+	a, a *, div, div *{
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+	a:hover img {
+		opacity: 1;
+	}
+	#wrapper {
+		min-width: 100%;
+	}
+	.container , .container-full {
+		width: 100%;
+		padding: 0 3%;
+	}
+	.pc {
+		display: none;
+	}
+	/*******use br tag text******/
+	.sp475, .sp425, .sp414, .sp375, .sp320{
+		display: none;
+	}
+	/***************************/
+
+	/*********************** Header *********************************/
+	#header{
+
+	}
+
+	/*********************** end Header *****************************/
+
+	/*********************** Gnavi **********************************/
+	#gnavi{
+
+	}
+	/************************ End Gnavi *****************************/
+  
+	/************************ Top Mainvisual ***************************/
+	.index #mainvisual {
+
+	}
+	/************************** end Top Mainvisual ***********************/
+	
+
+
+	/********************** Top Content *************************/
+	.box01{
+
+	}
+	/**************************** Footer *******************************/
+	#footer{
+
+	}
+	#totop{
+
+	}
+	/*************************** end Footer ****************************/
+
+
+}
+
+@media screen and (max-width: 640px) {
+	.sp640{
+		display: inherit;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	.sp475{
+		display: inherit;
+	}
+}
+@media screen and (max-width: 425px) {
+	.sp425{
+		display: inherit;
+	}
+
+}
+@media screen and (max-width: 414px) {
+	.sp414{
+		display: inherit;
+	}
+}
+@media screen and (max-width: 375px) {
+	.sp375{
+		display: inherit;
+	}
+}
+@media screen and (max-width: 320px) {
+	.sp320{
+		display: inherit;
+	}
+}
+
+

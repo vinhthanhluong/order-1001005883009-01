@@ -1,0 +1,164 @@
+/************************* under ******************************/
+.image_l {
+    float: left;
+    margin: 0 30px 8px 0;
+}
+.image_r {
+    float: right;
+    margin: 0 0 8px 30px;
+}
+.image_c{
+    text-align: center;
+    margin: 0 auto;
+}
+.bold {
+    font-weight: bold;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+.under .section,.under section {
+    margin: 0 0 60px;
+}
+.topic_path {
+
+}
+.topic_path li {
+
+}
+.topic_path li a {
+
+}
+.topic_path li:after {
+
+}
+.topic_path li:last-child:after {
+    content: none;
+}
+.topic_path li a:hover {
+
+}
+
+.under_tbl td, .under_tbl th {
+  
+}
+.under_tbl td {
+
+}
+.under_tbl tr th {
+
+}
+
+.note {
+    color: #8dc11f;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.vtop {
+    vertical-align: top;
+}
+.w33{
+    width: 33.33%;
+}
+.w20{
+    width:20%;
+}
+.lh0 {
+    line-height: 0;
+}
+.v_middle{
+    vertical-align: middle;
+}
+
+.under #main {
+ 
+}
+.under #content {
+ 
+}
+.under h3, .under h4, .under h5, .under h6 {
+    line-height: 1.5em;
+    word-break: break-all;
+    word-wrap: break-word;
+
+}
+.under #mainvisual {
+
+}
+.under #mainvisual .container {
+
+}
+.under #mainvisual h2 {
+ 
+}
+
+.under h3 {
+
+}
+.under h3 span {
+ 
+}
+.under h4 {
+
+}
+.under h4:before{
+
+}
+
+.under h5 {
+  
+}
+.under h6 {
+
+}
+
+.under_list li {
+   
+}
+.under_list li:before {
+ 
+}
+.under_list li:last-child {
+    margin-bottom: 0;
+}
+
+.anchor_list {
+
+}
+.anchor_list li {
+
+}
+.anchor_list li a {
+
+}
+.anchor_list li a:after {
+
+}
+.anchor_list li a:hover {
+    opacity: .8;
+}
+.under_bnr{
+
+}
+.under_bnr li{
+
+}
+.under_bnr a {
+
+}
+
+.under_bnr a[target="_blank"]:hover{
+
+}
+
+.under_bnr a:before{
+
+}
+.under_bnr a:not([target="_blank"]):hover:before{
+
+}
+/************************ end under ************************/

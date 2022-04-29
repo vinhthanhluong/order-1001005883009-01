@@ -1,0 +1,66 @@
+@media screen and (max-width: 750px) {
+    /************************* under ******************************/
+	.under #main{
+		
+	}
+	.under #content{
+	
+	}
+    .image_r, .image_l {
+	    float: none;
+	    text-align: center;
+	    margin: 0 0 30px;
+	}
+	.image_c{
+		width: 100%;
+		margin: 0 0 30px;
+	}
+	.under .section, .under section {
+		margin: 0 0 35px;
+	}
+	.tbl_scroll table{
+		min-width: 640px;
+		table-layout: fixed;
+	}
+	.tbl_block tr, .tbl_block th, .tbl_block td {
+		display: block;
+		width: 100% !important;
+		border-bottom: none;
+	}
+	.tbl_scroll,.img_scroll {
+		overflow-x: scroll;
+	}
+	.tbl_block {
+		border-bottom: 1px solid #e36229;
+	}
+	/************************ end under ************************/
+}
+@media screen and (max-width: 475px) {
+
+	/************************* under ******************************/
+
+	/************************ end under ************************/
+}
+@media screen and (max-width: 425px) {
+
+	/************************* under ******************************/
+
+	/************************ end under ************************/
+}
+@media screen and (max-width: 414px) {
+
+	/************************* under ******************************/
+
+	/************************ end under ************************/
+}
+@media screen and (max-width: 375px) {
+
+	/************************* under ******************************/
+
+	/************************ end under ************************/
+}
+@media screen and (max-width: 320px) {
+	/************************* under ******************************/
+
+	/************************ end under ************************/
+}
