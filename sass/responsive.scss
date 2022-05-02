@@ -4,6 +4,9 @@
 	// .menu_icon{
 	// 	display:none;
 	// }
+	a[href^=tel]{
+		pointer-events: none;
+	}
 	.sp {
 		display: none;
 	}

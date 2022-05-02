@@ -3,6 +3,7 @@ $(function () {
     var obj = {
         init: function () {
             this.visual();
+            this.toTop();
         },
 
         visual: function () {
@@ -20,6 +21,25 @@ $(function () {
                 pauseOnHover: false,
                 fade: false,
                 variableWidth: false,
+            });
+        },
+
+        toTop: function(){
+            var _w = $(window).width();
+            $(window).scroll(function () { 
+                var st = $(window).scrollTop();
+                if (st > 20) {
+                    $('#totop').fadeIn();
+                }else{
+                    $('#totop').fadeOut();
+                }
+            });
+
+            $('#totop').click(function () {
+                $('html,body').animate({
+                    scrollTop: 0,
+                }, 800);
+                return false;
             });
         },
 
