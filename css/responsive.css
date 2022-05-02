@@ -44,12 +44,74 @@
 
   /***************************/
   /*********************** Header *********************************/
+  #header .header-btn {
+    display: none;
+  }
+
   /*********************** end Header *****************************/
   /*********************** Gnavi **********************************/
   /************************ End Gnavi *****************************/
   /************************ Top Mainvisual ***************************/
+  #visual .visual-hd {
+    bottom: 50%;
+    left: 30px;
+    right: 30px;
+    transform: translateY(50%);
+    width: auto;
+    height: auto;
+    max-height: 274px;
+    display: block;
+    padding: 0;
+    padding: 50px;
+  }
+  #visual .visual-hd::before {
+    display: none;
+  }
+  #visual .visual-tt {
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+    padding: 0 0 10px;
+    margin-bottom: 20px;
+  }
+  #visual .visual-tt::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #a6884c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  #visual .visual-btn {
+    color: #482A1D;
+    display: flex;
+    justify-content: space-between;
+  }
+  #visual .visual-btn li {
+    background-color: #fff;
+    width: calc((100% - 20px) / 3);
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+
   /************************** end Top Mainvisual ***********************/
   /********************** Top Content *************************/
+  .news .news-wrapper {
+    flex-direction: column;
+  }
+  .news .news-tt {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .news .news-md {
+    margin-bottom: 20px;
+  }
+  .news .btn-link {
+    margin: 0 auto;
+  }
+
   /**************************** Footer *******************************/
   /*************************** end Footer ****************************/
 }
