@@ -633,7 +633,7 @@ div * {
   }
 
   .footer-bottom {
-    padding-top: 50px;
+    padding: 50px 0 100px;
   }
   .footer-bottom .fb-top {
     display: none;
@@ -860,6 +860,10 @@ div * {
   }
   .footer-top .tkb-img img {
     height: auto;
+  }
+
+  .footer-bottom {
+    padding-bottom: 78px;
   }
 
   .btn-fix .bf-list li {

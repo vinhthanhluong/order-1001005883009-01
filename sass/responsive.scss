@@ -782,7 +782,8 @@
     }
 
     .footer-bottom {
-        padding-top: 50px;
+        // padding-top: 50px;
+        padding: 50px 0 100px;
 
         .fb-top {
             display: none;
@@ -838,10 +839,10 @@
                 flex-direction: row;
 
                 &:nth-child(2) {
-					.bf-tt{
-						margin: 0;
-					}
-				}
+                    .bf-tt {
+                        margin: 0;
+                    }
+                }
             }
 
             p {
@@ -1099,20 +1100,24 @@
         }
     }
 
+    .footer-bottom {
+        padding-bottom: 78px;
+    }
+
     .btn-fix {
 
-		.bf-list{
-			li{
-				height: 58px;
-			}
-		}
+        .bf-list {
+            li {
+                height: 58px;
+            }
+        }
 
         .bf-tt {
-			display: none;
+            display: none;
         }
 
         .bf-tt2 {
-			display: none;
+            display: none;
         }
 
         .bf-ic {
