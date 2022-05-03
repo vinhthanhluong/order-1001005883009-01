@@ -4,33 +4,36 @@ $(function () {
         init: function () {
             this.visual();
             this.toTop();
+            this.slickTop();
         },
 
         visual: function () {
-            $('.slick-wrap').slick({
-                dots: false,
-                infinite: true,
-                speed: 1000,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                // autoplay: true,
-                // autoplaySpeed: 5000,
-                arrows: false,
-                centerMode: false,
-                centerPadding: 0,
-                pauseOnHover: false,
-                fade: false,
-                variableWidth: false,
-            });
+            if ($('.slick-wrap').length > 0) {
+                $('.slick-wrap').slick({
+                    dots: false,
+                    infinite: true,
+                    speed: 1000,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    // autoplay: true,
+                    // autoplaySpeed: 5000,
+                    arrows: false,
+                    centerMode: false,
+                    centerPadding: 0,
+                    pauseOnHover: false,
+                    fade: false,
+                    variableWidth: false,
+                });
+            }
         },
 
-        toTop: function(){
+        toTop: function () {
             var _w = $(window).width();
-            $(window).scroll(function () { 
+            $(window).scroll(function () {
                 var st = $(window).scrollTop();
                 if (st > 20) {
                     $('#totop').fadeIn();
-                }else{
+                } else {
                     $('#totop').fadeOut();
                 }
             });
@@ -42,6 +45,26 @@ $(function () {
                 return false;
             });
         },
+
+        slickTop: function () {
+            if ($('#treat-slick').length > 0 && $(window).width() < 751) {
+                $('#treat-slick').slick({
+                    dots: false,
+                    infinite: true,
+                    speed: 1000,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    // autoplay: true,
+                    // autoplaySpeed: 5000,
+                    arrows: true,
+                    centerMode: false,
+                    centerPadding: 0,
+                    pauseOnHover: false,
+                    fade: false,
+                    variableWidth: false,
+                });
+            }
+        }
 
     };
 
