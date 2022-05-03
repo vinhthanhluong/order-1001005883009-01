@@ -665,6 +665,36 @@ div * {
     height: 80px;
   }
 
+  .btn-fix {
+    top: unset;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+  .btn-fix .bf-list {
+    display: flex;
+  }
+  .btn-fix .bf-list li {
+    width: 50%;
+    height: 80px;
+    flex-direction: row;
+  }
+  .btn-fix .bf-list li:nth-child(2) .bf-tt {
+    margin: 0;
+  }
+  .btn-fix .bf-list p {
+    margin: 0;
+  }
+  .btn-fix .bf-tt {
+    font-size: 4vw;
+  }
+  .btn-fix .bf-tt2 {
+    font-size: 5vw;
+  }
+  .btn-fix .bf-ic {
+    margin: 0 10px 0 0 !important;
+  }
+
   /*************************** end Footer ****************************/
 }
 @media screen and (max-width: 640px) {
@@ -830,6 +860,19 @@ div * {
   }
   .footer-top .tkb-img img {
     height: auto;
+  }
+
+  .btn-fix .bf-list li {
+    height: 58px;
+  }
+  .btn-fix .bf-tt {
+    display: none;
+  }
+  .btn-fix .bf-tt2 {
+    display: none;
+  }
+  .btn-fix .bf-ic {
+    margin: 0 !important;
   }
 }
 @media screen and (max-width: 500px) {

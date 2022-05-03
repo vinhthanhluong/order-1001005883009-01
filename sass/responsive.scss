@@ -782,7 +782,7 @@
     }
 
     .footer-bottom {
-		padding-top: 50px;
+        padding-top: 50px;
 
         .fb-top {
             display: none;
@@ -792,7 +792,7 @@
             display: flex;
             justify-content: space-between;
             width: 100% !important;
-			margin-top: 0 !important;
+            margin-top: 0 !important;
 
             &:nth-child(1),
             &:nth-child(2) {
@@ -804,23 +804,64 @@
 
         .fb-web {
             margin-bottom: 0;
-			width: calc(50% - 10px);
-			img{
-				width: 100%;
-				max-width: 100%;
-				object-fit: cover;
-			}
+            width: calc(50% - 10px);
+
+            img {
+                width: 100%;
+                max-width: 100%;
+                object-fit: cover;
+            }
         }
 
-		.copyright{
-			font-size: 12px;
-		}
+        .copyright {
+            font-size: 12px;
+        }
     }
 
     #totop {
-		width: 80px;
-		height: 80px;
-	}
+        width: 80px;
+        height: 80px;
+    }
+
+    .btn-fix {
+        top: unset;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+
+        .bf-list {
+            display: flex;
+
+            li {
+                width: 50%;
+                height: 80px;
+                flex-direction: row;
+
+                &:nth-child(2) {
+					.bf-tt{
+						margin: 0;
+					}
+				}
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .bf-tt {
+            font-size: 4vw;
+
+        }
+
+        .bf-tt2 {
+            font-size: 5vw;
+        }
+
+        .bf-ic {
+            margin: 0 10px 0 0 !important;
+        }
+    }
 
     /*************************** end Footer ****************************/
 
@@ -1058,7 +1099,26 @@
         }
     }
 
-    .footer-bottom {}
+    .btn-fix {
+
+		.bf-list{
+			li{
+				height: 58px;
+			}
+		}
+
+        .bf-tt {
+			display: none;
+        }
+
+        .bf-tt2 {
+			display: none;
+        }
+
+        .bf-ic {
+            margin: 0 !important;
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1424,14 +1484,14 @@
     }
 
     .footer-bottom {
-        .d-flex{
-			margin-bottom: 50px;
-		}
+        .d-flex {
+            margin-bottom: 50px;
+        }
 
-		.copyright{
-			letter-spacing: 0;
-			font-size: 11px;
-		}
+        .copyright {
+            letter-spacing: 0;
+            font-size: 11px;
+        }
     }
 
 }

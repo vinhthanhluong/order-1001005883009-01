@@ -225,15 +225,42 @@ body {
 .btn-fix {
   position: fixed;
   top: 100px;
-  right: 50px;
-  width: 100px;
-  height: 200px;
-  background-color: rebeccapurple;
-  display: none;
+  right: 1px;
+  z-index: 10;
 }
 .btn-fix .bf-list li {
   width: 100px;
   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.btn-fix .bf-list li:nth-child(1) {
+  background-image: linear-gradient(135deg, #545f62 0%, #333739 40%, #292b2d 65%, #202224 99%);
+}
+.btn-fix .bf-list li:nth-child(1) .bf-tt {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 7px 0 0;
+}
+.btn-fix .bf-list li:nth-child(1) .bf-ic {
+  margin: 7px 0 0;
+}
+.btn-fix .bf-list li:nth-child(2) {
+  background-image: linear-gradient(135deg, #f8c87d 0%, #b78d50 39%, #5d4427 100%);
+}
+.btn-fix .bf-list li:nth-child(2) .bf-tt {
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+.btn-fix .bf-list li:nth-child(2) .bf-ic {
+  margin-top: 0;
+}
+.btn-fix .bf-list p {
+  line-height: 1;
+  margin: 0;
 }
 
 .menu_icon {

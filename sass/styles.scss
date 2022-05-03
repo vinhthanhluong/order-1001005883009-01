@@ -195,6 +195,8 @@ body {
     display: flex;
 }
 
+
+
 /*===================== Header ========================*/
 .logo {
     line-height: 0;
@@ -242,18 +244,56 @@ body {
 .btn-fix {
     position: fixed;
     top: 100px;
-    right: 50px;
-    width: 100px;
-    height: 200px;
-    background-color: rebeccapurple;
-    display: none;
+    right: 1px;
+    // width: 100px;
+    // height: 200px;
+    z-index: 10;
 
     .bf-list {
         li {
             width: 100px;
             height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #fff;
+
+            &:nth-child(1) {
+                background-image: linear-gradient(135deg, #545f62 0%, #333739 40%, #292b2d 65%, #202224 99%);
+
+                .bf-tt {
+                    font-size: 20px;
+                    font-weight: normal;
+                    margin: 7px 0 0;
+                }
+
+                .bf-ic {
+                    margin: 7px 0 0;
+                }
+            }
+
+            &:nth-child(2) {
+                background-image: linear-gradient(135deg, #f8c87d 0%, #b78d50 39%, #5d4427 100%);
+
+                .bf-tt {
+                    letter-spacing: 1px;
+                    margin-top: 5px;
+                }
+
+                .bf-ic {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        p {
+            line-height: 1;
+            margin: 0;
         }
     }
+
+
 }
 
 .menu_icon {
@@ -339,14 +379,14 @@ body {
     margin: 0 auto;
     position: relative;
 
-    .slick-wrap{
-        p{
+    .slick-wrap {
+        p {
             margin: 0;
         }
 
-        img{
+        img {
             width: 100%;
-            max-width: 100%;            
+            max-width: 100%;
             object-fit: cover;
         }
     }
@@ -361,7 +401,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        padding-right: 100px;   
+        padding-right: 100px;
 
         &::before {
             content: "";
@@ -564,7 +604,7 @@ body {
         width: 100%;
         margin-top: 36px;
         border: 1px #171e27 solid;
-        background: url("/images/intro-banner.jpg") no-repeat center ;
+        background: url("/images/intro-banner.jpg") no-repeat center;
         background-size: cover;
         height: 180px;
         display: flex;
@@ -755,7 +795,7 @@ body {
         // display: inline-block;
     }
 
-    .know-head{
+    .know-head {
         display: inline-block;
     }
 
@@ -846,7 +886,7 @@ body {
         display: inline-block;
     }
 
-    .hospi-head{
+    .hospi-head {
         display: inline-block;
         margin-top: 52px;
     }
@@ -902,7 +942,7 @@ body {
         text-align: center;
         line-height: 1.3;
 
-        &::after{
+        &::after {
             content: '';
             width: 40px;
             height: 1px;
@@ -1063,7 +1103,7 @@ body {
         // display: inline-block;
     }
 
-    .liness-head{
+    .liness-head {
         display: inline-block;
         margin-top: 35px;
 
@@ -1482,7 +1522,7 @@ body {
         margin-right: calc((100% - 1200px) / 2);
     }
 
-    .doctor-head{
+    .doctor-head {
         margin: 36px 0 0 0;
         display: inline-block;
     }
