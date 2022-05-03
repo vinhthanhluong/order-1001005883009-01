@@ -631,11 +631,12 @@ body {
   overflow: hidden;
   background-color: #482a1d;
   color: #fff;
-  padding: 125px 0 95px;
+  padding: 124px 0 95px;
 }
 .knowledge .know-txt {
   margin-left: calc((100% - 1200px) / 2);
-  width: 540px;
+}
+.knowledge .know-head {
   display: inline-block;
 }
 .knowledge .title {
@@ -661,7 +662,7 @@ body {
   letter-spacing: 0.7px;
   font-family: "Noto Serif JP", serif;
   font-size: 18px;
-  width: 50%;
+  width: 48.5%;
   margin: 0 0 38px 0px;
 }
 .knowledge .know-list li:nth-child(3), .knowledge .know-list li:nth-child(4) {
@@ -679,7 +680,7 @@ body {
 }
 .knowledge .know-ig {
   float: right;
-  margin-top: 17px;
+  margin: 17px 0 0 35px;
   transform: translateX(50px);
 }
 .knowledge .know-ig img {
@@ -689,7 +690,7 @@ body {
 }
 
 .hospitality {
-  padding: 0 0 156px;
+  padding: 0 0 101px;
   margin-top: 0px;
   color: #fff;
   background-color: #482a1d;
@@ -707,9 +708,13 @@ body {
   z-index: -1;
 }
 .hospitality .hospi-txt {
-  margin: 52px 0 0 76px;
-  width: 515px;
+  margin: 0 0 0 0;
+  margin-right: calc((100% - 1200px) / 2);
   display: inline-block;
+}
+.hospitality .hospi-head {
+  display: inline-block;
+  margin-top: 52px;
 }
 .hospitality .title {
   margin-bottom: 35px;
@@ -728,10 +733,12 @@ body {
 }
 .hospitality .hospi-desc {
   letter-spacing: 0.5px;
+  line-height: 2.34;
 }
 .hospitality .hospi-ig {
   transform: translateX(-48px);
   float: left;
+  margin-right: 76px;
   width: 960px;
   height: 586px;
 }
@@ -752,6 +759,14 @@ body {
   background-color: #482a1d;
   text-align: center;
   line-height: 1.3;
+}
+.hospitality .hospi-t::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: #896d40;
+  position: absolute;
+  bottom: 0;
 }
 .hospitality .hp-img2 {
   margin-left: 20px;
@@ -866,9 +881,10 @@ body {
 }
 .cleanliness .liness-txt {
   margin-left: calc((100% - 1200px) / 2);
-  margin-top: 35px;
-  width: 500px;
+}
+.cleanliness .liness-head {
   display: inline-block;
+  margin-top: 35px;
 }
 .cleanliness .title {
   margin-bottom: 14px;
@@ -881,11 +897,13 @@ body {
 }
 .cleanliness .liness-desc {
   letter-spacing: 0.5px;
-  margin-bottom: 52px;
+  margin-bottom: 49px;
+  line-height: 2.34;
 }
 .cleanliness .liness-ig {
   float: right;
   transform: translateX(50px);
+  margin-left: 85px;
 }
 .cleanliness .btn-link {
   width: 300px;
@@ -1203,11 +1221,14 @@ body {
 .doctor .doctor-ig {
   float: left;
   transform: translate(-48px, 3px);
+  margin-right: 28px;
 }
 .doctor .doctor-txt {
-  width: 562px;
+  margin-right: calc((100% - 1200px) / 2);
+}
+.doctor .doctor-head {
+  margin: 36px 0 0 0;
   display: inline-block;
-  margin: 34px 0 0 28px;
 }
 .doctor .title {
   margin-bottom: 27px;
@@ -1218,7 +1239,7 @@ body {
   line-height: 1.5;
 }
 .doctor .doctor-desc {
-  margin-bottom: 42px;
+  margin-bottom: 41px;
   letter-spacing: 0.5px;
 }
 .doctor .doctor-desc span {
@@ -1230,7 +1251,7 @@ body {
 }
 .doctor .btn-link {
   width: 300px;
-  margin-left: 4px;
+  transform: translateX(4px);
 }
 
 .bg-parallax {
