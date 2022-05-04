@@ -16,6 +16,11 @@
     display: none;
   }
 }
+@media screen and (min-width: 751px) and (max-width: 1860px) {
+  #header .container-full {
+    margin: 0 30px;
+  }
+}
 @media screen and (max-width: 750px) {
   h1,
 h2,
@@ -89,6 +94,38 @@ div * {
 
   /*********************** end Header *****************************/
   /*********************** Gnavi **********************************/
+  #gnavi {
+    width: 100%;
+    height: 100%;
+  }
+  #gnavi .gnavi-wrapper {
+    padding: 40px 30px;
+    height: 100%;
+    overflow-y: auto;
+  }
+  #gnavi .gnavi-top {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  #gnavi .gnavi-item {
+    width: 100% !important;
+  }
+  #gnavi .gnavi-item:nth-child(1) {
+    margin-bottom: 30px;
+  }
+  #gnavi .gnavi-list {
+    columns: auto;
+  }
+  #gnavi .gnavi-list li {
+    margin-bottom: 15px;
+  }
+  #gnavi .gnavi-list li:last-child {
+    margin-bottom: 0;
+  }
+  #gnavi .gnavi-info {
+    display: none;
+  }
+
   /************************ End Gnavi *****************************/
   /************************ Top Mainvisual ***************************/
   #visual .visual-hd {
@@ -663,6 +700,7 @@ div * {
   #totop {
     width: 80px;
     height: 80px;
+    bottom: 100px;
   }
 
   .btn-fix {
@@ -706,6 +744,51 @@ div * {
   .container,
 .container-full {
     padding: 0 15px;
+  }
+
+  #header .header-wrap {
+    height: 80px;
+  }
+  #header .logo img {
+    width: 80%;
+  }
+
+  .menu_icon {
+    height: 80px;
+    width: 80px;
+    font-size: 18px;
+  }
+  .menu_icon .mline {
+    margin-top: -26px;
+  }
+  .menu_icon .mtext {
+    bottom: 13px;
+  }
+
+  #main {
+    margin-top: 80px;
+  }
+
+  #gnavi {
+    top: 80px;
+  }
+  #gnavi .gnavi-wrapper {
+    padding: 20px;
+  }
+  #gnavi .gnavi-top {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  #gnavi .gnavi-item:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  #gnavi .gnavi-head {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  #gnavi .gnavi-list li {
+    margin-bottom: 10px;
+    line-height: 1.8;
   }
 
   #visual .visual-hd {
@@ -877,6 +960,10 @@ div * {
   }
   .btn-fix .bf-ic {
     margin: 0 !important;
+  }
+
+  #totop {
+    bottom: 88px;
   }
 }
 @media screen and (max-width: 500px) {

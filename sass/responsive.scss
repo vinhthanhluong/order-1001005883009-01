@@ -21,6 +21,14 @@
     }
 }
 
+@media screen and (min-width: 751px) and(max-width: 1860px) {
+    #header{
+        .container-full{
+            margin: 0 30px;
+        }
+    }
+}
+
 @media screen and (max-width:750px) {
 
     h1,
@@ -100,7 +108,40 @@
     /*********************** end Header *****************************/
 
     /*********************** Gnavi **********************************/
-    #gnavi {}
+    #gnavi {
+        width: 100%;
+        height: 100%;
+        .gnavi-wrapper{
+            padding: 40px 30px;
+            // height: calc(100vh - 100px);
+            height: 100%;
+            overflow-y: auto;
+        }
+        .gnavi-top{
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .gnavi-item{
+            width: 100% !important;
+            &:nth-child(1){
+                margin-bottom: 30px;
+            }
+        }
+        .gnavi-list{
+            columns: auto;
+            li{
+                margin-bottom: 15px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .gnavi-info{
+            display: none;
+        }
+    }
 
     /************************ End Gnavi *****************************/
 
@@ -822,6 +863,7 @@
     #totop {
         width: 80px;
         height: 80px;
+        bottom: 100px;
     }
 
     .btn-fix {
@@ -880,6 +922,65 @@
     .container,
     .container-full {
         padding: 0 15px;
+    }
+
+    #header{
+        .header-wrap{
+            height: 80px;
+        }
+
+        .logo{
+            img{
+                width: 80%;
+            }
+        }
+    }
+    .menu_icon{
+        height: 80px;
+        width: 80px;
+        font-size: 18px;
+        .mline{
+            margin-top: -26px;
+        }
+
+        .mtext{
+            bottom: 13px;
+        }
+    }
+
+    #main{
+        margin-top: 80px;
+    }
+
+    #gnavi{
+        top: 80px;
+
+        .gnavi-wrapper{
+            padding: 20px;
+        }
+        
+        .gnavi-top{
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .gnavi-item{
+            &:nth-child(1){
+                margin-bottom: 20px;
+            }
+        }
+
+        .gnavi-head{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .gnavi-list{
+            li{
+                margin-bottom: 10px;
+                line-height: 1.8;
+            }
+        }
     }
 
     #visual {
@@ -1123,6 +1224,10 @@
         .bf-ic {
             margin: 0 !important;
         }
+    }
+
+    #totop{
+        bottom: 88px;
     }
 }
 
