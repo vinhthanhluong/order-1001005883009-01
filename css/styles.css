@@ -517,7 +517,6 @@ body {
   position: absolute;
   bottom: 52px;
   left: -100px;
-  background-color: rgba(72, 42, 29, 0.95);
   width: 748px;
   height: 160px;
   display: flex;
@@ -533,12 +532,28 @@ body {
   position: absolute;
   bottom: 33%;
   left: 0;
+  z-index: 1;
+}
+#visual .visual-hd::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(72, 42, 29, 0.95);
+  mix-blend-mode: multiply;
 }
 #visual .visual-tt {
   font-size: 30px;
   color: #fff;
   margin: -10px 0 0;
   position: relative;
+  z-index: 1;
+}
+#visual .visual-btn {
+  position: relative;
+  z-index: 1;
 }
 
 /*===================== end Top Mainvisual ========================*/
@@ -773,12 +788,6 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-}
-.concept .cept-list li::before {
-  content: "";
-  position: absolute;
-  inset: 1;
-  background-color: rgba(72, 42, 29, 0.7);
 }
 .concept .cept-img {
   margin-bottom: 0;
@@ -1478,14 +1487,22 @@ body {
 
 /*===================== end Top Content ========================*/
 /*===================== Footer ========================*/
-.footer-top {
-  padding: 0 0 73px;
+.index .footer-top {
   margin-top: -156px;
+  padding: 0 0 73px;
 }
+.index .footer-top .ft-wrapper {
+  padding-top: 77px;
+}
+
+.under .footer-top {
+  padding: 139px 0 72px;
+}
+
 .footer-top .ft-wrapper {
   background-color: #fff;
   position: relative;
-  padding: 77px 60px 0;
+  padding: 0 60px 0;
 }
 .footer-top .ft-cols {
   display: flex;

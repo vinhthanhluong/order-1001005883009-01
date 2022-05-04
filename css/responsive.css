@@ -613,14 +613,22 @@ div * {
   }
 
   /**************************** Footer *******************************/
-  .footer-top {
+  .index .footer-top {
     margin-top: -100px;
     padding-bottom: 60px;
   }
+  .index .footer-top .ft-wrapper {
+    padding-top: 60px;
+  }
+
+  .under .footer-top {
+    padding: 60px 0;
+  }
+
   .footer-top .ft-wrapper {
     max-width: 580px;
     margin: 0 auto;
-    padding: 60px 40px 0;
+    padding: 0 40px 0;
   }
   .footer-top .ft-item {
     width: 100%;
@@ -708,6 +716,8 @@ div * {
     bottom: 0;
     right: 0;
     width: 100%;
+    transition: all 0.4s ease;
+    transform: translateY(100%);
   }
   .btn-fix .bf-list {
     display: flex;
@@ -935,8 +945,12 @@ div * {
     height: 350px;
   }
 
+  .index .footer-top .ft-wrapper {
+    padding-top: 30px;
+  }
+
   .footer-top .ft-wrapper {
-    padding: 30px 20px 0;
+    padding: 0 20px 0;
   }
   .footer-top .call-f {
     font-size: 50px;
@@ -1211,11 +1225,19 @@ div * {
     margin-bottom: 20px;
   }
 
-  .footer-top {
+  .index .footer-top {
     padding-bottom: 40px;
   }
+  .index .footer-top .ft-wrapper {
+    padding-top: 25px;
+  }
+
+  .under .footer-top {
+    padding: 40px 0;
+  }
+
   .footer-top .ft-wrapper {
-    padding: 25px 15px 0;
+    padding: 0 15px 0;
   }
   .footer-top .ft-logo {
     margin-bottom: 20px;

@@ -88,8 +88,10 @@ $(function () {
                 var st = $(window).scrollTop();
                 if (st > 10) {
                     $('#header').addClass('--fixed');
+                    $('.btn-fix').css('transform' , 'translateY(0%)');
                 }else{
                     $('#header').removeClass('--fixed');
+                    $('.btn-fix').css('transform' , 'translateY(100%)');
                 }
                 
                 if (st > 10 && $(window).width() > 750) {

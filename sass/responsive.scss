@@ -147,6 +147,19 @@
 
     /************************ Top Mainvisual ***************************/
     #visual {
+        .slick-wrap{
+            // img{
+            //     min-width: 750px;
+            //     transition: all .3s ease;
+            // }
+            // .slick-active{
+            //     img{
+            //         position: relative;
+            //         left: 50%;
+            //         transform: translateX(-50%);
+            //     }
+            // }
+        }
         .visual-hd {
             bottom: 50%;
             left: 30px;
@@ -753,14 +766,29 @@
     /**************************** Footer *******************************/
     #footer {}
 
+    .index{
+        .footer-top{
+            margin-top: -100px;
+            padding-bottom: 60px;
+
+            .ft-wrapper {
+                padding-top: 60px;
+            }
+        }
+    }
+
+    .under{
+        .footer-top{
+            padding: 60px 0;
+        }
+    }
+
     .footer-top {
-        margin-top: -100px;
-        padding-bottom: 60px;
 
         .ft-wrapper {
             max-width: 580px;
             margin: 0 auto;
-            padding: 60px 40px 0;
+            padding: 0 40px 0;
         }
 
         .ft-item {
@@ -871,7 +899,8 @@
         bottom: 0;
         right: 0;
         width: 100%;
-
+        transition: all .4s ease;
+        transform: translateY(100%);
         .bf-list {
             display: flex;
 
@@ -1184,10 +1213,17 @@
     .bg-parallax {
         height: 350px
     }
+    .index{
+        .footer-top{
+            .ft-wrapper{
+                padding-top: 30px;
+            }
+        }
+    }
 
     .footer-top {
         .ft-wrapper {
-            padding: 30px 20px 0;
+            padding: 0 20px 0;
         }
 
         .call-f {
@@ -1545,12 +1581,25 @@
             margin-bottom: 20px;
         }
     }
+    .index{
+        .footer-top{
+            padding-bottom: 40px;
+            .ft-wrapper{
+                padding-top: 25px;
+            }
+        }
+    }
+
+    .under{
+        .footer-top{
+            padding: 40px 0;
+        }
+    }
 
     .footer-top {
-        padding-bottom: 40px;
 
         .ft-wrapper {
-            padding: 25px 15px 0;
+            padding: 0 15px 0;
         }
 
         .ft-logo {

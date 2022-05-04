@@ -576,6 +576,7 @@ body {
             width: 100%;
             max-width: 100%;
             object-fit: cover;
+            // max-height: 786px;
         }
     }
 
@@ -583,7 +584,8 @@ body {
         position: absolute;
         bottom: 52px;
         left: -100px;
-        background-color: rgba($color: #482a1d, $alpha: 0.95);
+        // background-color: rgba($color: #482a1d, $alpha: 0.95);
+        // background-color: rgba($color: #2d1510, $alpha: 0.9);
         width: 748px;
         height: 160px;
         display: flex;
@@ -599,6 +601,18 @@ body {
             position: absolute;
             bottom: 33%;
             left: 0;
+            z-index: 1;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #482a1d, $alpha: 0.95);
+            mix-blend-mode: multiply;
         }
     }
 
@@ -607,6 +621,12 @@ body {
         color: #fff;
         margin: -10px 0 0;
         position: relative;
+        z-index: 1;
+    }
+
+    .visual-btn {
+        position: relative;
+        z-index: 1;
     }
 }
 
@@ -896,13 +916,6 @@ body {
             align-items: center;
             justify-content: center;
             position: relative;
-
-            &::before {
-                content: "";
-                position: absolute;
-                inset: 1;
-                background-color: rgba($color: #482a1d, $alpha: 0.7);
-            }
         }
     }
 
@@ -1756,14 +1769,26 @@ body {
 /*===================== end Top Content ========================*/
 
 /*===================== Footer ========================*/
-.footer-top {
-    padding: 0 0 73px;
-    margin-top: -156px;
+.index {
+    .footer-top {
+        margin-top: -156px;
+        padding: 0 0 73px;
 
+        .ft-wrapper {
+            padding-top: 77px;
+        }
+    }
+}
+.under {
+    .footer-top {
+        padding: 139px 0 72px;
+    }
+}
+.footer-top {
     .ft-wrapper {
         background-color: #fff;
         position: relative;
-        padding: 77px 60px 0;
+        padding: 0 60px 0;
     }
 
     .ft-cols {
@@ -1944,8 +1969,8 @@ body {
         text-transform: uppercase;
         letter-spacing: 2px;
         margin-bottom: 42px;
-        transition: all .3s ease;
-        &:hover{
+        transition: all 0.3s ease;
+        &:hover {
             text-decoration: underline;
         }
     }
@@ -2018,8 +2043,8 @@ body {
 
     .fb-link {
         text-decoration: none;
-        transition: all .3s ease;
-        &:hover{
+        transition: all 0.3s ease;
+        &:hover {
             text-decoration: underline;
         }
     }
