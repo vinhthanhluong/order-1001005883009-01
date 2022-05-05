@@ -706,7 +706,7 @@ body {
   width: 100%;
   margin-top: 36px;
   border: 1px #171e27 solid;
-  background: url("/images/intro-banner.jpg") no-repeat center;
+  background: url("../images/intro-banner.jpg") no-repeat center;
   background-size: cover;
   height: 180px;
   display: flex;
@@ -1136,7 +1136,7 @@ body {
   color: #fff;
   height: 1036px;
   width: 100%;
-  background-image: url("/images/precautions-img01.jpg");
+  background-image: url("../images/precautions-img01.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1476,7 +1476,7 @@ body {
 }
 
 .bg-parallax {
-  background-image: url("/images/bg-parallax.jpg");
+  background-image: url("../images/bg-parallax.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
