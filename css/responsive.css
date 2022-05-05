@@ -20,6 +20,46 @@
   #header .container-full {
     margin: 0 30px;
   }
+
+  #wrapper {
+    min-width: 1230px;
+  }
+
+  .knowledge .know-ig {
+    width: 680px;
+    margin-left: 20px;
+  }
+
+  .hospitality .hospi-ig {
+    width: 680px;
+    transform: none;
+    margin-right: 30px;
+  }
+  .hospitality .hp-img1 {
+    width: 322px;
+  }
+  .hospitality .hp-img2 {
+    margin-bottom: 10px;
+  }
+  .hospitality .hp-img2, .hospitality .hp-img3 {
+    width: 340px;
+    margin-left: 10px;
+  }
+
+  .cleanliness .liness-ig {
+    width: 680px;
+    transform: none;
+    margin-left: 30px;
+  }
+
+  .doctor .doctor-ig {
+    width: 680px;
+    transform: none;
+    height: 640px;
+  }
+  .doctor .doctor-ig img {
+    height: 500px;
+  }
 }
 @media screen and (max-width: 750px) {
   h1,
@@ -159,7 +199,7 @@ div * {
     left: 0;
   }
   #visual .visual-btn {
-    color: #482A1D;
+    color: #482a1d;
     display: flex;
     justify-content: space-between;
   }
@@ -317,6 +357,10 @@ div * {
     transform: none;
     margin: 0 0 30px;
   }
+  .knowledge .know-ig img {
+    width: 100%;
+    height: 100%;
+  }
   .knowledge .know-desc {
     margin-bottom: 40px;
   }
@@ -420,7 +464,9 @@ div * {
   .cleanliness::before {
     top: 96px;
     bottom: 0;
+    right: 0;
     height: auto;
+    width: 100%;
   }
   .cleanliness .liness-txt {
     margin-left: 0;
@@ -438,6 +484,9 @@ div * {
   .cleanliness .liness-ig {
     margin: 0 -30px 20px 0;
     transform: none;
+  }
+  .cleanliness .liness-ig img {
+    height: auto;
   }
   .cleanliness .liness-desc {
     margin-bottom: 30px;
@@ -531,7 +580,7 @@ div * {
     top: 117px;
     width: 80px;
     height: 80px;
-    background-color: #482A1D;
+    background-color: #482a1d;
     z-index: 1;
     font-size: 0;
     outline: none;
@@ -583,6 +632,7 @@ div * {
     left: 60px;
     width: auto;
     height: 500px;
+    right: 0;
   }
   .doctor .doctor-txt {
     margin-right: 0;
@@ -602,6 +652,9 @@ div * {
   .doctor .doctor-ig {
     margin: 0 0 30px -30px;
     transform: none;
+  }
+  .doctor .doctor-ig img {
+    height: auto;
   }
   .doctor .doctor-desc {
     margin-bottom: 30px;
@@ -878,7 +931,7 @@ div * {
     background-color: #3e2318;
     width: 84%;
     font-size: 12px;
-    height: 50px;
+    min-height: 50px;
   }
 
   .equipment .equi-tt {
@@ -1006,7 +1059,7 @@ div * {
   }
 
   .btn-link {
-    height: 50px;
+    min-height: 50px;
   }
 
   #visual .visual-hd {
@@ -1246,7 +1299,7 @@ div * {
     width: 80%;
   }
   .footer-top .call-f {
-    font-size: 30PX;
+    font-size: 30px;
   }
   .footer-top .ft-time {
     letter-spacing: 1px;

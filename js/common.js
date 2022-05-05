@@ -16,8 +16,8 @@ $(function () {
                     speed: 1000,
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    // autoplay: true,
-                    // autoplaySpeed: 5000,
+                    autoplay: true,
+                    autoplaySpeed: 5000,
                     arrows: false,
                     centerMode: false,
                     centerPadding: 0,
@@ -91,12 +91,6 @@ $(function () {
                 } else {
                     $('#header').removeClass('--fixed');
                 }
-
-                if (st > 10 && $(window).width() > 750) {
-                    $('.menu_icon').removeClass('--active');
-                    $('#gnavi').removeClass('--show');
-                }
-                
 
                 if ( $(window).width() <= 750 ) {
                     if (st > 10) {

@@ -1,9 +1,8 @@
 @media screen and (min-width: 751px) {
-
     // .menu_icon{
     // 	display:none;
     // }
-    a[href^=tel] {
+    a[href^="tel"] {
         pointer-events: none;
     }
 
@@ -22,15 +21,64 @@
 }
 
 @media screen and (min-width: 751px) and(max-width: 1860px) {
-    #header{
-        .container-full{
+    #header {
+        .container-full {
             margin: 0 30px;
+        }
+    }
+    #wrapper {
+        min-width: 1230px;
+    }
+    .knowledge {
+        .know-ig {
+            width: 680px;
+            margin-left: 20px;
+        }
+    }
+
+    .hospitality{
+        .hospi-ig{
+            width: 680px;
+            transform: none;
+            margin-right: 30px;
+        }
+        .hospi-img{
+
+        }
+        .hp-img1{
+            width: 322px;
+        }
+
+        .hp-img2{
+            margin-bottom: 10px;
+        }
+        .hp-img2, .hp-img3{
+            width: 340px;
+            margin-left: 10px;
+        }
+        
+    }
+
+    .cleanliness{
+        .liness-ig{
+            width: 680px;
+            transform: none;
+            margin-left: 30px;
+        }
+    }
+    .doctor{
+        .doctor-ig{
+            width: 680px;
+            transform: none;
+            height: 640px;
+            img{
+                height: 500px;
+            }
         }
     }
 }
 
-@media screen and (max-width:750px) {
-
+@media screen and (max-width: 750px) {
     h1,
     h2,
     h3,
@@ -111,34 +159,34 @@
     #gnavi {
         width: 100%;
         height: 100%;
-        .gnavi-wrapper{
+        .gnavi-wrapper {
             padding: 40px 30px;
             // height: calc(100vh - 100px);
             height: 100%;
             overflow-y: auto;
         }
-        .gnavi-top{
+        .gnavi-top {
             font-size: 24px;
             margin-bottom: 30px;
         }
 
-        .gnavi-item{
+        .gnavi-item {
             width: 100% !important;
-            &:nth-child(1){
+            &:nth-child(1) {
                 margin-bottom: 30px;
             }
         }
-        .gnavi-list{
+        .gnavi-list {
             columns: auto;
-            li{
+            li {
                 margin-bottom: 15px;
-                &:last-child{
+                &:last-child {
                     margin-bottom: 0;
                 }
             }
         }
 
-        .gnavi-info{
+        .gnavi-info {
             display: none;
         }
     }
@@ -147,7 +195,7 @@
 
     /************************ Top Mainvisual ***************************/
     #visual {
-        .slick-wrap{
+        .slick-wrap {
             // img{
             //     min-width: 750px;
             //     transition: all .3s ease;
@@ -196,7 +244,7 @@
         }
 
         .visual-btn {
-            color: #482A1D;
+            color: #482a1d;
             display: flex;
             justify-content: space-between;
 
@@ -211,8 +259,6 @@
     }
 
     /************************** end Top Mainvisual ***********************/
-
-
 
     /********************** Top Content *************************/
     .news {
@@ -393,6 +439,10 @@
         .know-ig {
             transform: none;
             margin: 0 0 30px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
 
         .know-desc {
@@ -470,13 +520,11 @@
         .hp-img3 {
             // width: 50%;
             width: calc(50% - 10px);
-
         }
 
         .hospi-t {
             bottom: -40px;
             background-color: #3e2318;
-
         }
     }
 
@@ -524,7 +572,9 @@
         &::before {
             top: 96px;
             bottom: 0;
+            right: 0;
             height: auto;
+            width: 100%;
         }
 
         .liness-txt {
@@ -546,6 +596,9 @@
         .liness-ig {
             margin: 0 -30px 20px 0;
             transform: none;
+            img {
+                height: auto;
+            }
         }
 
         .liness-desc {
@@ -663,15 +716,15 @@
             top: 117px;
             width: 80px;
             height: 80px;
-            background-color: #482A1D;
+            background-color: #482a1d;
             z-index: 1;
             font-size: 0;
             outline: none;
             border: none;
 
             &::before {
-                content: '';
-                background-image: url('/images/ar-lt.png');
+                content: "";
+                background-image: url("/images/ar-lt.png");
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: 10px 18px;
@@ -726,6 +779,7 @@
             left: 60px;
             width: auto;
             height: 500px;
+            right: 0;
         }
 
         .doctor-txt {
@@ -750,6 +804,9 @@
         .doctor-ig {
             margin: 0 0 30px -30px;
             transform: none;
+            img {
+                height: auto;
+            }
         }
 
         .doctor-desc {
@@ -764,10 +821,11 @@
     }
 
     /**************************** Footer *******************************/
-    #footer {}
+    #footer {
+    }
 
-    .index{
-        .footer-top{
+    .index {
+        .footer-top {
             margin-top: -100px;
             padding-bottom: 60px;
 
@@ -777,14 +835,13 @@
         }
     }
 
-    .under{
-        .footer-top{
+    .under {
+        .footer-top {
             padding: 60px 0;
         }
     }
 
     .footer-top {
-
         .ft-wrapper {
             max-width: 580px;
             margin: 0 auto;
@@ -868,8 +925,6 @@
             &:nth-child(2) {
                 display: none;
             }
-
-
         }
 
         .fb-web {
@@ -899,7 +954,7 @@
         bottom: 0;
         right: 0;
         width: 100%;
-        transition: all .4s ease;
+        transition: all 0.4s ease;
         transform: translateY(100%);
         .bf-list {
             display: flex;
@@ -923,7 +978,6 @@
 
         .bf-tt {
             font-size: 4vw;
-
         }
 
         .bf-tt2 {
@@ -936,8 +990,6 @@
     }
 
     /*************************** end Footer ****************************/
-
-
 }
 
 @media screen and (max-width: 640px) {
@@ -947,65 +999,64 @@
 }
 
 @media screen and (max-width: 600px) {
-
     .container,
     .container-full {
         padding: 0 15px;
     }
 
-    #header{
-        .header-wrap{
+    #header {
+        .header-wrap {
             height: 80px;
         }
 
-        .logo{
-            img{
+        .logo {
+            img {
                 width: 80%;
             }
         }
     }
-    .menu_icon{
+    .menu_icon {
         height: 80px;
         width: 80px;
         font-size: 18px;
-        .mline{
+        .mline {
             margin-top: -26px;
         }
 
-        .mtext{
+        .mtext {
             bottom: 13px;
         }
     }
 
-    #main{
+    #main {
         margin-top: 80px;
     }
 
-    #gnavi{
+    #gnavi {
         top: 80px;
 
-        .gnavi-wrapper{
+        .gnavi-wrapper {
             padding: 20px;
         }
-        
-        .gnavi-top{
+
+        .gnavi-top {
             margin-bottom: 20px;
             font-size: 20px;
         }
 
-        .gnavi-item{
-            &:nth-child(1){
+        .gnavi-item {
+            &:nth-child(1) {
                 margin-bottom: 20px;
             }
         }
 
-        .gnavi-head{
+        .gnavi-head {
             font-size: 18px;
             margin-bottom: 10px;
         }
 
-        .gnavi-list{
-            li{
+        .gnavi-list {
+            li {
                 margin-bottom: 10px;
                 line-height: 1.8;
             }
@@ -1039,7 +1090,6 @@
         .intro-tt {
             font-size: 4.5vw;
         }
-
     }
 
     .concept {
@@ -1077,7 +1127,6 @@
     }
 
     .knowledge {
-
         .know-txt {
             padding: 0 15px;
         }
@@ -1122,7 +1171,7 @@
             background-color: #3e2318;
             width: 84%;
             font-size: 12px;
-            height: 50px;
+            min-height: 50px;
         }
     }
 
@@ -1211,11 +1260,11 @@
     }
 
     .bg-parallax {
-        height: 350px
+        height: 350px;
     }
-    .index{
-        .footer-top{
-            .ft-wrapper{
+    .index {
+        .footer-top {
+            .ft-wrapper {
                 padding-top: 30px;
             }
         }
@@ -1242,7 +1291,6 @@
     }
 
     .btn-fix {
-
         .bf-list {
             li {
                 height: 58px;
@@ -1262,7 +1310,7 @@
         }
     }
 
-    #totop{
+    #totop {
         bottom: 88px;
     }
 }
@@ -1301,7 +1349,8 @@
     }
 
     .btn-link {
-        height: 50px;
+        // height: 50px;
+        min-height: 50px;
     }
 
     #visual {
@@ -1318,7 +1367,6 @@
                 padding: 3px 5px;
             }
         }
-
     }
 
     .news {
@@ -1375,7 +1423,6 @@
 
     .knowledge {
         padding: 40px 0;
-
 
         .know-head {
             margin-bottom: 20px;
@@ -1480,7 +1527,6 @@
                 position: relative;
                 top: 0;
                 margin: 0 auto 20px;
-
             }
         }
     }
@@ -1506,7 +1552,6 @@
         .treat-txt {
             padding: 20px 15px;
             max-width: calc(100% - 30px);
-
         }
 
         .txt-label {
@@ -1581,23 +1626,22 @@
             margin-bottom: 20px;
         }
     }
-    .index{
-        .footer-top{
+    .index {
+        .footer-top {
             padding-bottom: 40px;
-            .ft-wrapper{
+            .ft-wrapper {
                 padding-top: 25px;
             }
         }
     }
 
-    .under{
-        .footer-top{
+    .under {
+        .footer-top {
             padding: 40px 0;
         }
     }
 
     .footer-top {
-
         .ft-wrapper {
             padding: 0 15px 0;
         }
@@ -1611,7 +1655,7 @@
         }
 
         .call-f {
-            font-size: 30PX;
+            font-size: 30px;
         }
 
         .ft-time {
@@ -1652,7 +1696,6 @@
             font-size: 11px;
         }
     }
-
 }
 
 @media screen and (max-width: 414px) {
