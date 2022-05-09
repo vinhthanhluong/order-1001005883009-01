@@ -215,7 +215,7 @@ body {
   z-index: 99;
 }
 #header.--fixed {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
 }
 #header .logo {
   margin-right: 48px;
@@ -1514,7 +1514,7 @@ body {
 }
 
 .under .footer-top {
-  padding: 139px 0 72px;
+  padding: 0 0 72px;
 }
 
 .footer-top .ft-wrapper {

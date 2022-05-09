@@ -709,7 +709,7 @@ div * {
   }
 
   .under .footer-top {
-    padding: 60px 0;
+    padding: 0 0 60px;
   }
 
   .footer-top .ft-wrapper {
@@ -1165,11 +1165,16 @@ div * {
   .concept::before {
     top: 22px;
   }
-  .concept .cept-list {
-    flex-wrap: wrap;
-  }
   .concept .cept-list li {
     width: 100%;
+  }
+  .concept .cept-num {
+    margin-bottom: 7px;
+    padding-bottom: 11px;
+    font-size: 32px;
+  }
+  .concept .cept-tt {
+    font-size: 17px;
   }
   .concept .cept-img img {
     height: 220px;
@@ -1376,7 +1381,7 @@ div * {
   }
 
   .under .footer-top {
-    padding: 40px 0;
+    padding: 0px 0 40px;
   }
 
   .footer-top .ft-wrapper {
@@ -1439,6 +1444,10 @@ div * {
 
   .equipment .equi-tt {
     font-size: 10px;
+  }
+
+  .concept .cept-list {
+    flex-wrap: wrap;
   }
 }
 

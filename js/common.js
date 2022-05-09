@@ -1,5 +1,15 @@
 $(function () {
     "use strict";
+    function anchorLink(el) {
+        var p = $(el).offset();
+        var offsetPC = 120;
+        var offsetSP = $(window).width() <= 600 ? 90 : 100;
+        if ($(window).width() > 750) {
+            $('html,body').animate({ scrollTop: p.top - offsetPC }, 400);
+        } else {
+            $('html,body').animate({ scrollTop: p.top - offsetSP }, 400);
+        }
+    }
     var obj = {
         init: function () {
             this.visual();
@@ -7,6 +17,8 @@ $(function () {
             this.slickTop();
             this.menu();
             this.heightTreat();
+            this.staffSlide();
+            this.anchorLink();
         },
 
         visual: function () {
@@ -125,7 +137,45 @@ $(function () {
                 $('.treat-item .treat-txt').css('min-height' , bigNumber);
             }
 
-        }
+        },
+
+        staffSlide: function () {
+            if ($('#und-slick').length > 0) {
+                $('#und-slick').slick({
+                    dots: false,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    variableWidth: true,
+                    autoplay: true
+                });
+            }
+        },
+        
+        anchorLink: function () {
+            $(window).on('load', function () {
+                "use strict";
+                // ANCHOR FROM OTHER PAGE
+                var hash = location.hash;
+                if (hash && $(hash).length > 0) {
+                    anchorLink(hash);
+                }
+                // ANCHOR IN PAGE
+                $('a[href^="#"]').click(function () {
+                    var getID = $(this).attr('href');
+                    if ($(getID).length) {
+                        anchorLink(getID);
+                        // CLOSE SP NAV
+                        if ($('body').hasClass('open-nav')) {
+                            $('#menu-toggle').trigger('click');
+                        }
+                        return false;
+                    }
+                });
+            });
+        },
     };
 
     obj.init();

@@ -227,7 +227,7 @@ body {
     z-index: 99;
 
     &.--fixed {
-        box-shadow: 0 0 10px rgba($color: #000, $alpha: 0.16);
+        box-shadow: 0 0 5px rgba($color: #000, $alpha: 0.08);
     }
 
     .logo {
@@ -1804,7 +1804,7 @@ body {
 }
 .under {
     .footer-top {
-        padding: 139px 0 72px;
+        padding: 0 0 72px;
     }
 }
 .footer-top {

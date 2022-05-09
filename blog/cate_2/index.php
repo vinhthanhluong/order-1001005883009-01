@@ -1,0 +1,9 @@
+<?php
+require_once('../_app/data.php');
+$current_category_id='2';
+$category_data=unserialize(@file_get_contents(DATA_DIR.'/category/'.$current_category_id.'.dat'));
+$current_category_url=$category_data['id'];
+$current_category_name=$category_data['name'];
+$current_category_text=@$category_data['text'];
+compile_template('category');
+include(DATA_DIR.'/tpl/category.php');
