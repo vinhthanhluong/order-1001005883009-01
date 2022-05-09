@@ -193,10 +193,9 @@ div * {
   /************************ End Gnavi *****************************/
   /************************ Top Mainvisual ***************************/
   #visual .visual-hd {
-    bottom: 50%;
+    bottom: 30px;
     left: 30px;
     right: 30px;
-    transform: translateY(50%);
     width: auto;
     height: auto;
     display: block;
@@ -1120,6 +1119,9 @@ div * {
 
   #visual .visual-hd {
     padding: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
   }
   #visual .visual-tt {
     font-size: 20px;

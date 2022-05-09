@@ -234,10 +234,9 @@
             // }
         }
         .visual-hd {
-            bottom: 50%;
+            bottom: 30px;
             left: 30px;
             right: 30px;
-            transform: translateY(50%);
             width: auto;
             height: auto;
             display: block;
@@ -1425,6 +1424,9 @@
     #visual {
         .visual-hd {
             padding: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
         }
 
         .visual-tt {
