@@ -637,6 +637,11 @@ body {
 .news .news-t {
   text-decoration: none;
   transition: all 0.3s ease;
+  max-width: 450px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .news .news-t:hover {
   color: #896d40;
@@ -718,7 +723,7 @@ body {
   border: 1px #171e27 solid;
   background: url("../images/intro-banner.jpg") no-repeat center;
   background-size: cover;
-  height: 180px;
+  min-height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -726,6 +731,7 @@ body {
   position: relative;
   z-index: 0;
   transition: all 0.3s ease;
+  padding: 0 5px;
 }
 .intro .intro-banner::after {
   content: "";
@@ -1609,6 +1615,7 @@ body {
 }
 .footer-top .map-link img {
   margin-left: 6px;
+  margin-top: 3px;
 }
 .footer-top .ft-list li {
   position: relative;
@@ -1791,5 +1798,12 @@ font-family: 'Noto Serif JP', serif;
 /*FireFox*/
 @-moz-document url-prefix() {}
 /*Safari*/
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .bg-parallax {
+      background-attachment: initial;
+    }
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

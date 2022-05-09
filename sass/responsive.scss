@@ -36,42 +36,41 @@
         }
     }
 
-    .hospitality{
-        .hospi-ig{
+    .hospitality {
+        .hospi-ig {
             width: 680px;
             transform: none;
             margin-right: 30px;
         }
-        .hospi-img{
-
+        .hospi-img {
         }
-        .hp-img1{
+        .hp-img1 {
             width: 322px;
         }
 
-        .hp-img2{
+        .hp-img2 {
             margin-bottom: 10px;
         }
-        .hp-img2, .hp-img3{
+        .hp-img2,
+        .hp-img3 {
             width: 340px;
             margin-left: 10px;
         }
-        
     }
 
-    .cleanliness{
-        .liness-ig{
+    .cleanliness {
+        .liness-ig {
             width: 680px;
             transform: none;
             margin-left: 30px;
         }
     }
-    .doctor{
-        .doctor-ig{
+    .doctor {
+        .doctor-ig {
             width: 680px;
             transform: none;
             height: 640px;
-            img{
+            img {
                 height: 500px;
             }
         }
@@ -131,6 +130,13 @@
         font-size: 60px;
     }
 
+    .no-scroll {
+        overflow-y: hidden;
+        touch-action: none;
+        -ms-touch-action: none;
+        -webkit-overflow-scrolling: auto;
+    }
+
     /*******use br tag text******/
     .sp475,
     .sp425,
@@ -147,10 +153,28 @@
         .header-btn {
             display: none;
         }
+
+        .header-wrap{
+            height: 80px;
+        }
     }
 
     .menu_icon {
         margin-right: 0;
+        height: 80px;
+        width: 80px;
+
+        .mline {
+            margin-top: -23px;
+        }
+
+        .mtext {
+            bottom: 10px;
+        }
+    }
+    
+    #main{
+        margin-top: 80px;
     }
 
     /*********************** end Header *****************************/
@@ -159,6 +183,7 @@
     #gnavi {
         width: 100%;
         height: 100%;
+        top: 80px;
         .gnavi-wrapper {
             padding: 40px 30px;
             // height: calc(100vh - 100px);
@@ -285,6 +310,7 @@
 
         .news-date {
             margin-right: 20px;
+            line-height: 30px;
         }
 
         .news-t {
@@ -292,6 +318,7 @@
             margin-top: 10px;
             line-height: 1.7;
             letter-spacing: 1px;
+            max-width: 700px;
         }
 
         .news-ft {
@@ -308,6 +335,10 @@
 
     .intro {
         margin: 60px 0;
+
+        .intro-banner{
+            min-height: 160px;
+        }
 
         .intro-logo {
             margin-bottom: 30px;
@@ -334,6 +365,11 @@
 
         .intro-list {
             margin-bottom: 30px;
+            li {
+                &::before {
+                    left: 2px;
+                }
+            }
         }
 
         .intro-btn {
@@ -346,10 +382,6 @@
             &:nth-child(1) {
                 margin-bottom: 20px;
             }
-        }
-
-        .intro-banner {
-            height: 200px;
         }
 
         .intro-tt {
@@ -414,6 +446,8 @@
 
         .btn-link {
             width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
         }
     }
 
@@ -692,7 +726,9 @@
         .treat-txt {
             width: 100%;
             max-width: calc(100% - 60px);
-            padding: 30px 40px 50px;
+            padding: 30px 40px 40px;
+            display: flex;
+            flex-direction: column;
         }
 
         .txt-label {
@@ -709,6 +745,7 @@
 
         .btn-link {
             width: 100%;
+            margin-top: auto;
         }
 
         .slick-arrow {
@@ -724,7 +761,7 @@
 
             &::before {
                 content: "";
-                background-image: url("/images/ar-lt.png");
+                background-image: url("../images/ar-lt.png");
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: 10px 18px;
@@ -897,6 +934,14 @@
                 width: 100%;
             }
         }
+
+        .ft-list{
+            li{
+                &::before{
+                    top: 8px;
+                }
+            }
+        }
     }
 
     .footer-mid {
@@ -1006,7 +1051,7 @@
 
     #header {
         .header-wrap {
-            height: 80px;
+            height: 70px;
         }
 
         .logo {
@@ -1016,24 +1061,28 @@
         }
     }
     .menu_icon {
-        height: 80px;
-        width: 80px;
+        height: 70px;
+        width: 70px;
         font-size: 18px;
         .mline {
-            margin-top: -26px;
+            margin-top: -21px;
+            width: 38px;
+            &::after , &::before{
+                width: 37px;
+            }
         }
 
-        .mtext {
-            bottom: 13px;
-        }
+        // .mtext {
+        //     bottom: 10px;
+        // }
     }
 
     #main {
-        margin-top: 80px;
+        margin-top: 70px;
     }
 
     #gnavi {
-        top: 80px;
+        top: 70px;
 
         .gnavi-wrapper {
             padding: 20px;
@@ -1081,25 +1130,28 @@
             }
         }
     }
+    .news {
+        .news-ft {
+            margin: 0 40px;
+        }
+    }
 
     .intro {
         .intro-banner {
-            height: 170px;
+            min-height: 150px;
         }
 
         .intro-tt {
             font-size: 4.5vw;
         }
+
+        .intro-btn {
+            margin: 0 40px;
+        }
     }
 
     .concept {
-        .cept-list {
-            flex-wrap: wrap;
-
-            li {
-                width: 100%;
-            }
-        }
+       
 
         .cept-num {
             margin-bottom: 15px;
@@ -1124,6 +1176,9 @@
         .cept-txt {
             margin-bottom: 20px;
         }
+        .cept-btn {
+            margin: 0 25px;
+        }
     }
 
     .knowledge {
@@ -1141,12 +1196,8 @@
 
         .know-list {
             li {
-                width: 100%;
-                transform: none !important;
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
+                font-size: 14px;
+                padding: 0 5px 0 25px;
             }
         }
     }
@@ -1185,6 +1236,10 @@
         .equi-label {
             font-size: 22px;
         }
+
+        .equi-btn {
+            margin: 0 40px;
+        }
     }
 
     .cleanliness {
@@ -1202,6 +1257,10 @@
 
         .liness-ig {
             margin-right: -15px;
+        }
+
+        .liness-btn {
+            margin: 0 40px;
         }
     }
 
@@ -1257,6 +1316,10 @@
         .doctor-ig {
             margin: 0 0 30px -15px;
         }
+
+        .doctor-btn {
+            margin: 0 40px;
+        }
     }
 
     .bg-parallax {
@@ -1273,6 +1336,13 @@
     .footer-top {
         .ft-wrapper {
             padding: 0 20px 0;
+        }
+
+        .ft-logo {
+            margin-bottom: 20px;
+            img {
+                width: 280px;
+            }
         }
 
         .call-f {
@@ -1311,18 +1381,17 @@
     }
 
     #totop {
-        bottom: 88px;
+        bottom: 94px;
+        width: 50px;
+        height: 50px;
+        a {
+            font-size: 14px;
+        }
     }
 }
 
 @media screen and (max-width: 500px) {
     .footer-top {
-        .ft-logo {
-            img {
-                width: 70%;
-            }
-        }
-
         .call-f {
             font-size: 42px;
         }
@@ -1372,8 +1441,8 @@
     .news {
         padding: 40px 0;
 
-        .btn-link {
-            max-width: 290px;
+        .news-ft {
+            margin: 0;
         }
     }
 
@@ -1395,11 +1464,15 @@
 
         .intro-tt {
             margin-bottom: 10px;
-            font-size: 18px;
+            font-size: 16px;
         }
 
         .intro-p {
             font-size: 12px;
+        }
+
+        .intro-btn {
+            margin: 0;
         }
     }
 
@@ -1408,6 +1481,14 @@
 
         &::before {
             top: 22px;
+        }
+
+        .cept-list {
+            flex-wrap: wrap;
+
+            li {
+                width: 100%;
+            }
         }
 
         .cept-img {
@@ -1419,6 +1500,10 @@
         .cept-label {
             font-size: 20px;
         }
+
+        .cept-btn {
+            margin: 0;
+        }
     }
 
     .knowledge {
@@ -1429,11 +1514,22 @@
         }
 
         .know-label {
-            font-size: 20px;
+            font-size: 18px;
         }
 
         .know-ig {
             margin-bottom: 20px;
+        }
+
+        .know-list {
+            li {
+                width: 100%;
+                transform: none !important;
+                font-size: 16px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 
@@ -1476,7 +1572,7 @@
         padding: 40px 0;
 
         .equi-label {
-            font-size: 19px;
+            font-size: 17px;
             margin-bottom: 20px;
         }
 
@@ -1491,6 +1587,10 @@
         .equi-tt {
             width: 80%;
         }
+
+        .equi-btn {
+            margin: 0;
+        }
     }
 
     .cleanliness {
@@ -1502,6 +1602,10 @@
 
         &::before {
             top: 65px;
+        }
+
+        .liness-btn {
+            margin: 0;
         }
     }
 
@@ -1519,14 +1623,15 @@
                 flex-wrap: wrap;
                 flex-direction: column;
                 padding: 0;
-                margin-bottom: 20px !important;
+                margin-bottom: 30px !important;
+                font-size: 16px;
             }
 
             .precaut-num {
                 display: block;
                 position: relative;
                 top: 0;
-                margin: 0 auto 20px;
+                margin: 0 auto 25px;
             }
         }
     }
@@ -1625,6 +1730,13 @@
         .doctor-ig {
             margin-bottom: 20px;
         }
+
+        .doctor-btn {
+            margin: 0;
+        }
+    }
+    .bg-parallax{
+        height: 250px;
     }
     .index {
         .footer-top {
@@ -1647,10 +1759,10 @@
         }
 
         .ft-logo {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
 
             img {
-                width: 80%;
+                width: 70%;
             }
         }
 
@@ -1683,12 +1795,15 @@
 
         .ft-map {
             margin-bottom: 20px;
+            iframe {
+                height: 200px;
+            }
         }
     }
 
     .footer-bottom {
         .d-flex {
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
 
         .copyright {
@@ -1713,5 +1828,10 @@
 @media screen and (max-width: 320px) {
     .sp320 {
         display: inherit;
+    }
+    .equipment {
+        .equi-tt {
+            font-size: 10px;
+        }
     }
 }

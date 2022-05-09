@@ -6,6 +6,7 @@ $(function () {
             this.toTop();
             this.slickTop();
             this.menu();
+            this.heightTreat();
         },
 
         visual: function () {
@@ -71,8 +72,8 @@ $(function () {
             $('.menu_icon').click(function () {
                 $(this).toggleClass('--active');
                 $('#gnavi').toggleClass('--show');
+                $('body').toggleClass('no-scroll');
             });
-
 
             $(document).mouseup(function (e) {
                 var $menu = $('.menu_icon');
@@ -80,9 +81,9 @@ $(function () {
                 if (!$menu.is(e.target) && $gnavi.has(e.target).length === 0) {
                     $('.menu_icon').removeClass('--active');
                     $('#gnavi').removeClass('--show');
+                    $('body').removeClass('no-scroll');
                 }
             });
-
 
             $(window).scroll(function () {
                 var st = $(window).scrollTop();
@@ -92,19 +93,39 @@ $(function () {
                     $('#header').removeClass('--fixed');
                 }
 
-                if ( $(window).width() <= 750 ) {
+                if ($(window).width() <= 750) {
                     if (st > 10) {
                         $('.btn-fix').css('transform', 'translateY(0%)');
-                    } else{
+                    } else {
                         $('.btn-fix').css('transform', 'translateY(100%)');
                     }
-                } 
-
-
-
+                }
             });
-        }
 
+
+        },
+
+        heightTreat: function () {
+            var _w = $(window).width();
+            if (_w < 751) {
+                var item = $('.treat-item .treat-txt');
+
+                function loopH(args) {
+                    var _aLoop = [];
+                    for (let i = 0; i < args.length; i++) {
+                        var element = item[i];
+                        var _mHeight = $(element).innerHeight();
+                        _aLoop.push(_mHeight)
+                    }
+                    return _aLoop;
+                }
+
+                var arrayHeight = loopH(item);
+                var bigNumber = Math.max.apply(Math, arrayHeight)
+                $('.treat-item .treat-txt').css('min-height' , bigNumber);
+            }
+
+        }
     };
 
     obj.init();

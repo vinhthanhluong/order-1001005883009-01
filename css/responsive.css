@@ -41,7 +41,8 @@
   .hospitality .hp-img2 {
     margin-bottom: 10px;
   }
-  .hospitality .hp-img2, .hospitality .hp-img3 {
+  .hospitality .hp-img2,
+.hospitality .hp-img3 {
     width: 340px;
     margin-left: 10px;
   }
@@ -113,6 +114,13 @@ div * {
     font-size: 60px;
   }
 
+  .no-scroll {
+    overflow-y: hidden;
+    touch-action: none;
+    -ms-touch-action: none;
+    -webkit-overflow-scrolling: auto;
+  }
+
   /*******use br tag text******/
   .sp475,
 .sp425,
@@ -127,9 +135,24 @@ div * {
   #header .header-btn {
     display: none;
   }
+  #header .header-wrap {
+    height: 80px;
+  }
 
   .menu_icon {
     margin-right: 0;
+    height: 80px;
+    width: 80px;
+  }
+  .menu_icon .mline {
+    margin-top: -23px;
+  }
+  .menu_icon .mtext {
+    bottom: 10px;
+  }
+
+  #main {
+    margin-top: 80px;
   }
 
   /*********************** end Header *****************************/
@@ -137,6 +160,7 @@ div * {
   #gnavi {
     width: 100%;
     height: 100%;
+    top: 80px;
   }
   #gnavi .gnavi-wrapper {
     padding: 40px 30px;
@@ -233,12 +257,14 @@ div * {
   }
   .news .news-date {
     margin-right: 20px;
+    line-height: 30px;
   }
   .news .news-t {
     width: 100%;
     margin-top: 10px;
     line-height: 1.7;
     letter-spacing: 1px;
+    max-width: 700px;
   }
   .news .news-ft {
     transform: none;
@@ -252,6 +278,9 @@ div * {
 
   .intro {
     margin: 60px 0;
+  }
+  .intro .intro-banner {
+    min-height: 160px;
   }
   .intro .intro-logo {
     margin-bottom: 30px;
@@ -275,6 +304,9 @@ div * {
   .intro .intro-list {
     margin-bottom: 30px;
   }
+  .intro .intro-list li::before {
+    left: 2px;
+  }
   .intro .intro-btn {
     flex-wrap: wrap;
   }
@@ -283,9 +315,6 @@ div * {
   }
   .intro .btn-link:nth-child(1) {
     margin-bottom: 20px;
-  }
-  .intro .intro-banner {
-    height: 200px;
   }
   .intro .intro-tt {
     text-align: center;
@@ -335,6 +364,8 @@ div * {
   }
   .concept .btn-link {
     width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
   }
 
   .knowledge {
@@ -561,7 +592,9 @@ div * {
   .treatment .treat-txt {
     width: 100%;
     max-width: calc(100% - 60px);
-    padding: 30px 40px 50px;
+    padding: 30px 40px 40px;
+    display: flex;
+    flex-direction: column;
   }
   .treatment .txt-label {
     font-size: 20px;
@@ -574,6 +607,7 @@ div * {
   }
   .treatment .btn-link {
     width: 100%;
+    margin-top: auto;
   }
   .treatment .slick-arrow {
     position: absolute;
@@ -588,7 +622,7 @@ div * {
   }
   .treatment .slick-arrow::before {
     content: "";
-    background-image: url("/images/ar-lt.png");
+    background-image: url("../images/ar-lt.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 10px 18px;
@@ -722,6 +756,9 @@ div * {
   .footer-top .ft-map iframe {
     width: 100%;
   }
+  .footer-top .ft-list li::before {
+    top: 8px;
+  }
 
   .footer-mid {
     padding: 40px 0;
@@ -810,30 +847,31 @@ div * {
   }
 
   #header .header-wrap {
-    height: 80px;
+    height: 70px;
   }
   #header .logo img {
     width: 80%;
   }
 
   .menu_icon {
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     font-size: 18px;
   }
   .menu_icon .mline {
-    margin-top: -26px;
+    margin-top: -21px;
+    width: 38px;
   }
-  .menu_icon .mtext {
-    bottom: 13px;
+  .menu_icon .mline::after, .menu_icon .mline::before {
+    width: 37px;
   }
 
   #main {
-    margin-top: 80px;
+    margin-top: 70px;
   }
 
   #gnavi {
-    top: 80px;
+    top: 70px;
   }
   #gnavi .gnavi-wrapper {
     padding: 20px;
@@ -868,19 +906,20 @@ div * {
     margin-bottom: 10px;
   }
 
+  .news .news-ft {
+    margin: 0 40px;
+  }
+
   .intro .intro-banner {
-    height: 170px;
+    min-height: 150px;
   }
   .intro .intro-tt {
     font-size: 4.5vw;
   }
+  .intro .intro-btn {
+    margin: 0 40px;
+  }
 
-  .concept .cept-list {
-    flex-wrap: wrap;
-  }
-  .concept .cept-list li {
-    width: 100%;
-  }
   .concept .cept-num {
     margin-bottom: 15px;
   }
@@ -899,6 +938,9 @@ div * {
   .concept .cept-txt {
     margin-bottom: 20px;
   }
+  .concept .cept-btn {
+    margin: 0 25px;
+  }
 
   .knowledge .know-txt {
     padding: 0 15px;
@@ -910,11 +952,8 @@ div * {
     margin-bottom: 30px;
   }
   .knowledge .know-list li {
-    width: 100%;
-    transform: none !important;
-  }
-  .knowledge .know-list li:last-child {
-    margin-bottom: 0;
+    font-size: 14px;
+    padding: 0 5px 0 25px;
   }
 
   .hospitality .hospi-txt {
@@ -942,6 +981,9 @@ div * {
   .equipment .equi-label {
     font-size: 22px;
   }
+  .equipment .equi-btn {
+    margin: 0 40px;
+  }
 
   .cleanliness .liness-txt {
     padding: 0 15px;
@@ -954,6 +996,9 @@ div * {
   }
   .cleanliness .liness-ig {
     margin-right: -15px;
+  }
+  .cleanliness .liness-btn {
+    margin: 0 40px;
   }
 
   .precautions .precaut-list {
@@ -993,6 +1038,9 @@ div * {
   .doctor .doctor-ig {
     margin: 0 0 30px -15px;
   }
+  .doctor .doctor-btn {
+    margin: 0 40px;
+  }
 
   .bg-parallax {
     height: 350px;
@@ -1004,6 +1052,12 @@ div * {
 
   .footer-top .ft-wrapper {
     padding: 0 20px 0;
+  }
+  .footer-top .ft-logo {
+    margin-bottom: 20px;
+  }
+  .footer-top .ft-logo img {
+    width: 280px;
   }
   .footer-top .call-f {
     font-size: 50px;
@@ -1030,13 +1084,15 @@ div * {
   }
 
   #totop {
-    bottom: 88px;
+    bottom: 94px;
+    width: 50px;
+    height: 50px;
+  }
+  #totop a {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 500px) {
-  .footer-top .ft-logo img {
-    width: 70%;
-  }
   .footer-top .call-f {
     font-size: 42px;
   }
@@ -1075,8 +1131,8 @@ div * {
   .news {
     padding: 40px 0;
   }
-  .news .btn-link {
-    max-width: 290px;
+  .news .news-ft {
+    margin: 0;
   }
 
   .intro {
@@ -1094,10 +1150,13 @@ div * {
   }
   .intro .intro-tt {
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 16px;
   }
   .intro .intro-p {
     font-size: 12px;
+  }
+  .intro .intro-btn {
+    margin: 0;
   }
 
   .concept {
@@ -1106,11 +1165,20 @@ div * {
   .concept::before {
     top: 22px;
   }
+  .concept .cept-list {
+    flex-wrap: wrap;
+  }
+  .concept .cept-list li {
+    width: 100%;
+  }
   .concept .cept-img img {
     height: 220px;
   }
   .concept .cept-label {
     font-size: 20px;
+  }
+  .concept .cept-btn {
+    margin: 0;
   }
 
   .knowledge {
@@ -1120,10 +1188,18 @@ div * {
     margin-bottom: 20px;
   }
   .knowledge .know-label {
-    font-size: 20px;
+    font-size: 18px;
   }
   .knowledge .know-ig {
     margin-bottom: 20px;
+  }
+  .knowledge .know-list li {
+    width: 100%;
+    transform: none !important;
+    font-size: 16px;
+  }
+  .knowledge .know-list li:last-child {
+    margin-bottom: 0;
   }
 
   .hospitality {
@@ -1158,7 +1234,7 @@ div * {
     padding: 40px 0;
   }
   .equipment .equi-label {
-    font-size: 19px;
+    font-size: 17px;
     margin-bottom: 20px;
   }
   .equipment .equi-col {
@@ -1170,6 +1246,9 @@ div * {
   .equipment .equi-tt {
     width: 80%;
   }
+  .equipment .equi-btn {
+    margin: 0;
+  }
 
   .cleanliness {
     padding: 40px 0;
@@ -1179,6 +1258,9 @@ div * {
   }
   .cleanliness::before {
     top: 65px;
+  }
+  .cleanliness .liness-btn {
+    margin: 0;
   }
 
   .precautions {
@@ -1194,13 +1276,14 @@ div * {
     flex-wrap: wrap;
     flex-direction: column;
     padding: 0;
-    margin-bottom: 20px !important;
+    margin-bottom: 30px !important;
+    font-size: 16px;
   }
   .precautions .precaut-list .precaut-num {
     display: block;
     position: relative;
     top: 0;
-    margin: 0 auto 20px;
+    margin: 0 auto 25px;
   }
 
   .treatment {
@@ -1277,6 +1360,13 @@ div * {
   .doctor .doctor-ig {
     margin-bottom: 20px;
   }
+  .doctor .doctor-btn {
+    margin: 0;
+  }
+
+  .bg-parallax {
+    height: 250px;
+  }
 
   .index .footer-top {
     padding-bottom: 40px;
@@ -1293,10 +1383,10 @@ div * {
     padding: 0 15px 0;
   }
   .footer-top .ft-logo {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .footer-top .ft-logo img {
-    width: 80%;
+    width: 70%;
   }
   .footer-top .call-f {
     font-size: 30px;
@@ -1320,9 +1410,12 @@ div * {
   .footer-top .ft-map {
     margin-bottom: 20px;
   }
+  .footer-top .ft-map iframe {
+    height: 200px;
+  }
 
   .footer-bottom .d-flex {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
   .footer-bottom .copyright {
     letter-spacing: 0;
@@ -1342,6 +1435,10 @@ div * {
 @media screen and (max-width: 320px) {
   .sp320 {
     display: inherit;
+  }
+
+  .equipment .equi-tt {
+    font-size: 10px;
   }
 }
 
