@@ -37,6 +37,7 @@
     }
 
     .hospitality {
+        margin-top: -1px;
         .hospi-ig {
             width: 680px;
             transform: none;
@@ -55,6 +56,11 @@
         .hp-img3 {
             width: 340px;
             margin-left: 10px;
+        }
+
+        .hospi-t{
+            bottom: -1px;
+            right: -1px;
         }
     }
 
@@ -75,6 +81,20 @@
             }
         }
     }
+}
+
+@media screen and(min-width: 751px) and (max-width: 1200px) {
+    .menu_icon {
+        height: 101px;
+    }
+
+    // .btn-fix {
+    //     .bf-list {
+    //         li {
+    //             height: 104px;
+    //         }
+    //     }
+    // }
 }
 
 @media screen and (max-width: 750px) {
@@ -126,15 +146,13 @@
         display: none;
     }
 
-    .title {
-        font-size: 60px;
-    }
+    // .title {
+    //     font-size: 60px;
+    // }
 
-    .no-scroll {
-        overflow-y: hidden;
-        touch-action: none;
-        -ms-touch-action: none;
-        -webkit-overflow-scrolling: auto;
+    .btn-link {
+        font-size: 26px;
+        min-height: 80px;
     }
 
     /*******use br tag text******/
@@ -154,27 +172,29 @@
             display: none;
         }
 
-        .header-wrap{
-            height: 80px;
+        .header-wrap {
+            // height: 80px;
         }
+
+        
     }
 
     .menu_icon {
         margin-right: 0;
-        height: 80px;
-        width: 80px;
+        // height: 100px;
+        // width: 80px;
 
-        .mline {
-            margin-top: -23px;
-        }
+        // .mline {
+        //     margin-top: -23px;
+        // }
 
-        .mtext {
-            bottom: 10px;
-        }
+        // .mtext {
+        //     bottom: 10px;
+        // }
     }
-    
-    #main{
-        margin-top: 80px;
+
+    #main {
+        // margin-top: 80px;
     }
 
     /*********************** end Header *****************************/
@@ -183,28 +203,43 @@
     #gnavi {
         width: 100%;
         height: 100%;
-        top: 80px;
+        // top: 80px;
         .gnavi-wrapper {
-            padding: 40px 30px;
+            padding: 60px 30px;
             // height: calc(100vh - 100px);
-            height: 100%;
-            overflow-y: auto;
+            // height: 100%;
+            // overflow-y: auto;
         }
         .gnavi-top {
-            font-size: 24px;
             margin-bottom: 30px;
         }
 
         .gnavi-item {
             width: 100% !important;
             &:nth-child(1) {
-                margin-bottom: 30px;
+                margin-bottom: 90px;
             }
+        }
+        .gnavi-head {
+            font-size: 26px;
+            margin-bottom: 35px;
+            .f-cor {
+                font-size: 20px;
+            }
+            .f-serif{
+                &::before{
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+        }
+        a {
+            font-size: 26px;
         }
         .gnavi-list {
             columns: auto;
             li {
-                margin-bottom: 15px;
+                margin-bottom: 44px;
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -254,6 +289,7 @@
             line-height: 1.6;
             padding: 0 0 10px;
             margin-bottom: 20px;
+            font-size: 36px;
 
             &::before {
                 content: "";
@@ -305,11 +341,17 @@
         .news-item {
             flex-wrap: wrap;
             margin-bottom: 20px;
+            font-size: 20px;
         }
 
         .news-date {
             margin-right: 20px;
             line-height: 30px;
+        }
+
+        .news-b {
+            width: 130px;
+            height: 36px;
         }
 
         .news-t {
@@ -335,8 +377,9 @@
     .intro {
         margin: 60px 0;
 
-        .intro-banner{
-            min-height: 160px;
+        .intro-banner {
+            min-height: 220px;
+            background: url("../images/intro-banner-sp.jpg") no-repeat center;
         }
 
         .intro-logo {
@@ -385,12 +428,13 @@
 
         .intro-tt {
             text-align: center;
-            font-size: 4vw;
+            font-size: 27px;
             margin-bottom: 15px;
         }
 
         .intro-p {
             transform: none;
+            font-size: 20px;
         }
     }
 
@@ -402,7 +446,7 @@
         }
 
         .cept-head {
-            max-width: 400px;
+            max-width: 480px;
             margin: 0 auto 30px;
         }
 
@@ -412,7 +456,6 @@
 
         .cept-label {
             line-height: 1.6;
-            font-size: 26px;
         }
 
         .container-full {
@@ -420,9 +463,8 @@
         }
 
         .cept-img {
-            img {
-                height: 300px;
-            }
+            width: 100%;
+            height: 100%;
         }
 
         .cept-num {
@@ -533,7 +575,7 @@
             }
 
             &:nth-child(1) {
-                margin-bottom: 60px;
+                margin-bottom: 70px;
 
                 .hospi-t {
                     width: 300px;
@@ -648,6 +690,7 @@
     .precautions {
         height: auto;
         padding: 60px 0;
+        background-image: url('../images/precautions-img01-sp.jpg');
 
         .precaut-label {
             font-size: 26px;
@@ -710,7 +753,7 @@
         }
 
         .treat-cols {
-            margin: 0 -30px;
+            margin: 0 -40px;
             display: block;
         }
 
@@ -747,6 +790,12 @@
             margin-top: auto;
         }
 
+        .slick-slide{
+            > div{
+                margin: 0 10px;
+            }
+        }
+
         .slick-arrow {
             position: absolute;
             top: 117px;
@@ -767,21 +816,26 @@
                 width: 10px;
                 height: 18px;
                 position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                
             }
         }
 
         .slick-prev {
-            left: 0;
+            left: 10px;
+            &::before{
+                top: 50%;
+                left: 45%;
+                transform: translate(-50%, -50%);
+            }
         }
 
         .slick-next {
-            right: 0;
+            right: 10px;
 
             &::before {
-                transform: translate(-50%, -50%) scale(-1);
+                top: 50%;
+                right: 45%;
+                transform: translate(50%, -50%) scale(-1);
             }
         }
 
@@ -909,7 +963,8 @@
         }
 
         .call-f {
-            font-size: 7.8vw;
+            // font-size: 7.9vw;
+            font-size: 58px;
         }
 
         .ft-time {
@@ -918,6 +973,8 @@
 
         .ft-web {
             width: 100%;
+            height: 80px;
+            font-size: 26px;
         }
 
         .map-link {
@@ -934,9 +991,9 @@
             }
         }
 
-        .ft-list{
-            li{
-                &::before{
+        .ft-list {
+            li {
+                &::before {
                     top: 8px;
                 }
             }
@@ -979,6 +1036,7 @@
                 width: 100%;
                 max-width: 100%;
                 object-fit: cover;
+                height: auto;
             }
         }
 
@@ -990,7 +1048,7 @@
     #totop {
         width: 80px;
         height: 80px;
-        bottom: 100px;
+        bottom: 80px;
     }
 
     .btn-fix {
@@ -1042,10 +1100,28 @@
     }
 }
 
+@media screen and (max-width: 630px) {
+
+    .footer-top{
+        .call-f{
+            font-size: 50px;
+        }
+    }
+}
+
 @media screen and (max-width: 600px) {
     .container,
     .container-full {
         padding: 0 15px;
+    }
+
+    .btn-link {
+        font-size: 15px;
+        min-height: 60px;
+    }
+
+    .title {
+        font-size: 60px;
     }
 
     #header {
@@ -1053,20 +1129,27 @@
             height: 70px;
         }
 
-        .logo {
-            img {
-                width: 80%;
-            }
+        .lo-pc{
+            display: none;
+        }
+
+        .lo-sp{
+            display: block;
         }
     }
     .menu_icon {
         height: 70px;
         width: 70px;
         font-size: 18px;
+
+        .mtext {
+            bottom: 10px;
+        }
         .mline {
             margin-top: -21px;
             width: 38px;
-            &::after , &::before{
+            &::after,
+            &::before {
                 width: 37px;
             }
         }
@@ -1101,6 +1184,21 @@
         .gnavi-head {
             font-size: 18px;
             margin-bottom: 10px;
+            .f-cor {
+                font-size: 17px;
+            }
+            .f-serif{
+                &::before{
+                    width: 7px;
+                    height: 7px;
+                }
+            }
+        }
+
+        .gnavi-list {
+            a {
+                font-size: 16px;
+            }
         }
 
         .gnavi-list {
@@ -1126,6 +1224,7 @@
             li {
                 width: 100%;
                 margin-bottom: 10px;
+                font-size: 14px;
             }
         }
     }
@@ -1133,11 +1232,20 @@
         .news-ft {
             margin: 0 40px;
         }
+
+        .news-item {
+            font-size: 16px;
+        }
+
+        .news-b {
+            width: 100px;
+            height: 30px;
+        }
     }
 
     .intro {
         .intro-banner {
-            min-height: 150px;
+            min-height: 160px;
         }
 
         .intro-tt {
@@ -1147,13 +1255,19 @@
         .intro-btn {
             margin: 0 40px;
         }
+
+        .intro-p {
+            font-size: 14px;
+        }
     }
 
     .concept {
-       
-
         .cept-num {
             margin-bottom: 15px;
+        }
+
+        .cept-label {
+            font-size: 26px;
         }
 
         .cept-tt {
@@ -1162,10 +1276,6 @@
 
         .cept-img {
             width: 100%;
-
-            img {
-                height: 260px;
-            }
         }
 
         .cept-wrap {
@@ -1220,7 +1330,8 @@
             bottom: -30px;
             background-color: #3e2318;
             width: 84%;
-            font-size: 12px;
+            font-size: 14px;
+            padding: 5px;
             min-height: 50px;
         }
     }
@@ -1271,6 +1382,14 @@
         .precaut-label {
             font-size: 24px;
         }
+
+
+
+        .precaut-list {
+            li {
+                font-size: 16px;
+            }
+        }
     }
 
     .treatment {
@@ -1279,7 +1398,7 @@
         }
 
         .treat-cols {
-            margin: 0 -15px;
+            margin: 0 -25px;
         }
 
         .treat-txt {
@@ -1345,13 +1464,18 @@
         }
 
         .call-f {
-            font-size: 50px;
+            // font-size: 50px;
         }
 
         .tkb-img {
             img {
                 height: auto;
             }
+        }
+
+        .ft-web{
+            height: 60px;
+            font-size: 18px;
         }
     }
 
@@ -1366,21 +1490,41 @@
             }
         }
 
-        .bf-tt {
-            display: none;
+        .bf-tt{
+            font-size: 16px;
         }
 
         .bf-tt2 {
-            display: none;
+            font-size: 18px;
         }
 
         .bf-ic {
-            margin: 0 !important;
+            margin: 5px !important;
+        }
+        .bf-list{
+            li{
+                &:nth-child(1){
+                    .bf-ic{
+                        img{
+                            width: 20px;
+                            height: auto;
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    .bf-ic{
+                        img{
+                            width: 30px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
         }
     }
 
     #totop {
-        bottom: 94px;
+        bottom: 58px;
         width: 50px;
         height: 50px;
         a {
@@ -1493,22 +1637,15 @@
             }
         }
 
-        .cept-num{
+        .cept-num {
             margin-bottom: 7px;
             padding-bottom: 11px;
             font-size: 32px;
         }
 
-        .cept-tt{
+        .cept-tt {
             font-size: 17px;
         }
-
-        .cept-img {
-            img {
-                height: 220px;
-            }
-        }
-
         .cept-label {
             font-size: 20px;
         }
@@ -1557,7 +1694,7 @@
         }
 
         .hospi-img {
-            margin-bottom: 15px !important;
+            margin-bottom: 20px !important;
         }
 
         .hospi-ig {
@@ -1625,7 +1762,7 @@
         padding: 40px 0;
 
         .precaut-label {
-            font-size: 20px;
+            font-size: 18px;
         }
 
         .precaut-list {
@@ -1654,6 +1791,10 @@
         .trt-t {
             font-size: 14px;
             line-height: 1.6;
+            padding: 0 7px;
+            &::before , &::after{
+                width: 14px;
+            }
         }
 
         .trt-b {
@@ -1747,7 +1888,7 @@
             margin: 0;
         }
     }
-    .bg-parallax{
+    .bg-parallax {
         height: 250px;
     }
     .index {
@@ -1766,6 +1907,9 @@
     }
 
     .footer-top {
+        .container{
+            padding: 0 15px;
+        }
         .ft-wrapper {
             padding: 0 15px 0;
         }
@@ -1774,7 +1918,8 @@
             margin-bottom: 10px;
 
             img {
-                width: 70%;
+                // width: 70%;
+                width: 190px;
             }
         }
 
@@ -1835,6 +1980,10 @@
     .sp375 {
         display: inherit;
     }
+
+    #totop{
+        bottom: 95px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -1850,6 +1999,13 @@
     .concept {
         .cept-list {
             flex-wrap: wrap;
+        }
+    }
+
+
+    .hospitality{
+        .hospi-t {
+            font-size: 13px;
         }
     }
 }

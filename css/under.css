@@ -39,7 +39,7 @@ a, a *, div, div *{
 }
 
 .topic_path {
-    margin:0 0 106px;
+    margin:20px 0 115px;
 }
 
 .topic_path li {
@@ -122,12 +122,13 @@ a, a *, div, div *{
     color: #171e27;
     height: 100%;
     text-align: center;
-    padding: 18px 20px;
+    padding: 16px 20px;
     text-decoration: none;
     border: solid 1px #171e27;
     line-height: 1.5em;
     transition: all 0.3s ease;
     letter-spacing:0;
+    font-size: 18px;
 }
 
 .anchor_list li a:after {
@@ -198,6 +199,7 @@ a, a *, div, div *{
     line-height: 1.5em;
     padding: 28px 10px 29px;
     text-align: center;
+    font-family: "Noto Serif JP", serif;
 }
 
 .under_tbl.fixed{
@@ -257,6 +259,8 @@ a, a *, div, div *{
     height: 250px;
     background: #482a1d;
     margin-bottom: 17px;
+    max-width: 1800px;
+    margin: 0 auto
 }
 
 .under #mainvisual .container {
@@ -264,6 +268,11 @@ a, a *, div, div *{
     display: flex;
     justify-content: center;
     height: 100%;
+}
+
+
+.under #mainvisual .under_mv_ttl {
+   text-align: center;
 }
 
 .under_mv_ttl .wrap{
@@ -567,7 +576,7 @@ a, a *, div, div *{
     position: absolute;
     content: '';
     right: -24px;
-    top: 34.3%;
+    top: 45%;
     background: url(../images/under_arrow_step.png) no-repeat center;
     background-size: contain;
     width: 10px;
@@ -586,7 +595,7 @@ a, a *, div, div *{
 .under_step02_item .img{
     line-height: 0;
     text-align: center;
-    margin-bottom: 42px;
+    margin-bottom: 15px;
 }
 
 
@@ -661,9 +670,9 @@ a, a *, div, div *{
     content: '';
     right: 0;
     bottom: 0;
-    width: 1200px;
+    width: 1160px;
     height: 84.5%;
-    background: rgba(14, 8, 6, 0.3);
+    background: #3e2318;
     z-index: -1;
 }
 .pk_container{
@@ -903,6 +912,12 @@ a, a *, div, div *{
     line-height: 1.5em;
     margin-bottom: 0;
 }
+.under_list_year .txt a:hover{
+   text-decoration: underline;
+}
+.under_box_tbl_content a:hover{
+    text-decoration: underline;
+ }
 .under_list_year li{
     display: flex;
     flex-wrap: wrap;
@@ -1018,6 +1033,9 @@ line-height: 1.5em;
 }
 .staff_frame{
     background: #f8f6f6;
+}
+.staff_frame .staff_ul01 .txt_b{
+    font-weight: bold;
 }
 .under_tbl.staff_tbl th, .under_tbl.staff_tbl td{
     text-align: center;
@@ -1172,7 +1190,6 @@ line-height: 1.5em;
 }
 
 .blog_list_news_item .cate {
-    font-weight: bold;
     font-size: 14px;
     padding: 7px 10px 3px;
     background: #482a1d;
@@ -1182,6 +1199,7 @@ line-height: 1.5em;
     margin-bottom: 0;
     margin-right: 10px;
     letter-spacing: 0.05em;
+    
 }
 .blog_list_news_item .cate.cate2{
     background: #896d40;
@@ -1264,7 +1282,6 @@ line-height: 1.5em;
 .blog_detail_item img {
     max-height: 500px;
     margin: 0 auto;
-    height: 100%;
 }
 .blog_detail_item p:empty{
     display: none;
@@ -1307,7 +1324,10 @@ line-height: 1.5em;
     display: none;
 }
 
-
+.blog_detail_des{
+    border: solid 1px #482a1d;
+    padding: 30px;
+}
 
 .btn_prev_next{
     position: relative;
@@ -1326,13 +1346,12 @@ line-height: 1.5em;
     align-items: center;
     font-weight: bold;
     background: #fff;
-    color: #171e27;
-    border: 3px solid #171e27;
+    color: #482a1d;
     height: 100%;
     text-align: center;
     padding: 22px 40px 20px 40px;
     text-decoration: none;
-    border: solid 1px #171e27;
+    border: solid 1px #482a1d;
     line-height: 1.5em;
     transition: all 0.3s ease;
 }
@@ -1346,3 +1365,30 @@ line-height: 1.5em;
     top: 0;
     right: 0;
 }
+
+.tbl-center td{
+    text-align: center;
+}
+
+.under-note-nw {
+    margin-top: 20px;
+}
+
+.under-note-nw li{
+    color: #DC0000;
+}
+
+
+.tbl-note-2{
+    margin-top: 15px;
+}
+
+.under_box_tbl.under-tbl-bg{
+    border: none;
+    background-color: #f8f6f6;
+}
+
+.under_step02.d-line .ttl{
+    line-height: 28px;
+}
+

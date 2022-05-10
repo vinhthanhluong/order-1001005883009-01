@@ -30,6 +30,9 @@
     margin-left: 20px;
   }
 
+  .hospitality {
+    margin-top: -1px;
+  }
   .hospitality .hospi-ig {
     width: 680px;
     transform: none;
@@ -46,6 +49,10 @@
     width: 340px;
     margin-left: 10px;
   }
+  .hospitality .hospi-t {
+    bottom: -1px;
+    right: -1px;
+  }
 
   .cleanliness .liness-ig {
     width: 680px;
@@ -60,6 +67,11 @@
   }
   .doctor .doctor-ig img {
     height: 500px;
+  }
+}
+@media screen and (min-width: 751px) and (max-width: 1200px) {
+  .menu_icon {
+    height: 101px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -110,15 +122,9 @@ div * {
     display: none;
   }
 
-  .title {
-    font-size: 60px;
-  }
-
-  .no-scroll {
-    overflow-y: hidden;
-    touch-action: none;
-    -ms-touch-action: none;
-    -webkit-overflow-scrolling: auto;
+  .btn-link {
+    font-size: 26px;
+    min-height: 80px;
   }
 
   /*******use br tag text******/
@@ -135,24 +141,8 @@ div * {
   #header .header-btn {
     display: none;
   }
-  #header .header-wrap {
-    height: 80px;
-  }
-
   .menu_icon {
     margin-right: 0;
-    height: 80px;
-    width: 80px;
-  }
-  .menu_icon .mline {
-    margin-top: -23px;
-  }
-  .menu_icon .mtext {
-    bottom: 10px;
-  }
-
-  #main {
-    margin-top: 80px;
   }
 
   /*********************** end Header *****************************/
@@ -160,28 +150,38 @@ div * {
   #gnavi {
     width: 100%;
     height: 100%;
-    top: 80px;
   }
   #gnavi .gnavi-wrapper {
-    padding: 40px 30px;
-    height: 100%;
-    overflow-y: auto;
+    padding: 60px 30px;
   }
   #gnavi .gnavi-top {
-    font-size: 24px;
     margin-bottom: 30px;
   }
   #gnavi .gnavi-item {
     width: 100% !important;
   }
   #gnavi .gnavi-item:nth-child(1) {
-    margin-bottom: 30px;
+    margin-bottom: 90px;
+  }
+  #gnavi .gnavi-head {
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
+  #gnavi .gnavi-head .f-cor {
+    font-size: 20px;
+  }
+  #gnavi .gnavi-head .f-serif::before {
+    width: 14px;
+    height: 14px;
+  }
+  #gnavi a {
+    font-size: 26px;
   }
   #gnavi .gnavi-list {
     columns: auto;
   }
   #gnavi .gnavi-list li {
-    margin-bottom: 15px;
+    margin-bottom: 44px;
   }
   #gnavi .gnavi-list li:last-child {
     margin-bottom: 0;
@@ -211,6 +211,7 @@ div * {
     line-height: 1.6;
     padding: 0 0 10px;
     margin-bottom: 20px;
+    font-size: 36px;
   }
   #visual .visual-tt::before {
     content: "";
@@ -253,10 +254,15 @@ div * {
   .news .news-item {
     flex-wrap: wrap;
     margin-bottom: 20px;
+    font-size: 20px;
   }
   .news .news-date {
     margin-right: 20px;
     line-height: 30px;
+  }
+  .news .news-b {
+    width: 130px;
+    height: 36px;
   }
   .news .news-t {
     width: 100%;
@@ -279,7 +285,8 @@ div * {
     margin: 60px 0;
   }
   .intro .intro-banner {
-    min-height: 160px;
+    min-height: 220px;
+    background: url("../images/intro-banner-sp.jpg") no-repeat center;
   }
   .intro .intro-logo {
     margin-bottom: 30px;
@@ -317,11 +324,12 @@ div * {
   }
   .intro .intro-tt {
     text-align: center;
-    font-size: 4vw;
+    font-size: 27px;
     margin-bottom: 15px;
   }
   .intro .intro-p {
     transform: none;
+    font-size: 20px;
   }
 
   .concept {
@@ -331,7 +339,7 @@ div * {
     top: 36px;
   }
   .concept .cept-head {
-    max-width: 400px;
+    max-width: 480px;
     margin: 0 auto 30px;
   }
   .concept .title {
@@ -339,13 +347,13 @@ div * {
   }
   .concept .cept-label {
     line-height: 1.6;
-    font-size: 26px;
   }
   .concept .container-full {
     padding: 0;
   }
-  .concept .cept-img img {
-    height: 300px;
+  .concept .cept-img {
+    width: 100%;
+    height: 100%;
   }
   .concept .cept-num {
     margin-bottom: 20px;
@@ -438,7 +446,7 @@ div * {
     object-fit: cover;
   }
   .hospitality .hospi-img:nth-child(1) {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
   }
   .hospitality .hospi-img:nth-child(1) .hospi-t {
     width: 300px;
@@ -530,6 +538,7 @@ div * {
   .precautions {
     height: auto;
     padding: 60px 0;
+    background-image: url("../images/precautions-img01-sp.jpg");
   }
   .precautions .precaut-label {
     font-size: 26px;
@@ -579,7 +588,7 @@ div * {
     margin-bottom: 30px;
   }
   .treatment .treat-cols {
-    margin: 0 -30px;
+    margin: 0 -40px;
     display: block;
   }
   .treatment .treat-item {
@@ -608,6 +617,9 @@ div * {
     width: 100%;
     margin-top: auto;
   }
+  .treatment .slick-slide > div {
+    margin: 0 10px;
+  }
   .treatment .slick-arrow {
     position: absolute;
     top: 117px;
@@ -628,18 +640,22 @@ div * {
     width: 10px;
     height: 18px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   .treatment .slick-prev {
-    left: 0;
+    left: 10px;
+  }
+  .treatment .slick-prev::before {
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
   }
   .treatment .slick-next {
-    right: 0;
+    right: 10px;
   }
   .treatment .slick-next::before {
-    transform: translate(-50%, -50%) scale(-1);
+    top: 50%;
+    right: 45%;
+    transform: translate(50%, -50%) scale(-1);
   }
   .treatment .treat-list {
     flex-wrap: wrap;
@@ -736,13 +752,15 @@ div * {
     text-align: center;
   }
   .footer-top .call-f {
-    font-size: 7.8vw;
+    font-size: 58px;
   }
   .footer-top .ft-time {
     font-size: 18px;
   }
   .footer-top .ft-web {
     width: 100%;
+    height: 80px;
+    font-size: 26px;
   }
   .footer-top .map-link {
     display: flex;
@@ -789,6 +807,7 @@ div * {
     width: 100%;
     max-width: 100%;
     object-fit: cover;
+    height: auto;
   }
   .footer-bottom .copyright {
     font-size: 12px;
@@ -797,7 +816,7 @@ div * {
   #totop {
     width: 80px;
     height: 80px;
-    bottom: 100px;
+    bottom: 80px;
   }
 
   .btn-fix {
@@ -839,23 +858,43 @@ div * {
     display: inherit;
   }
 }
+@media screen and (max-width: 630px) {
+  .footer-top .call-f {
+    font-size: 50px;
+  }
+}
 @media screen and (max-width: 600px) {
   .container,
 .container-full {
     padding: 0 15px;
   }
 
+  .btn-link {
+    font-size: 15px;
+    min-height: 60px;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
   #header .header-wrap {
     height: 70px;
   }
-  #header .logo img {
-    width: 80%;
+  #header .lo-pc {
+    display: none;
+  }
+  #header .lo-sp {
+    display: block;
   }
 
   .menu_icon {
     height: 70px;
     width: 70px;
     font-size: 18px;
+  }
+  .menu_icon .mtext {
+    bottom: 10px;
   }
   .menu_icon .mline {
     margin-top: -21px;
@@ -886,6 +925,16 @@ div * {
     font-size: 18px;
     margin-bottom: 10px;
   }
+  #gnavi .gnavi-head .f-cor {
+    font-size: 17px;
+  }
+  #gnavi .gnavi-head .f-serif::before {
+    width: 7px;
+    height: 7px;
+  }
+  #gnavi .gnavi-list a {
+    font-size: 16px;
+  }
   #gnavi .gnavi-list li {
     margin-bottom: 10px;
     line-height: 1.8;
@@ -903,14 +952,22 @@ div * {
   #visual .visual-btn li {
     width: 100%;
     margin-bottom: 10px;
+    font-size: 14px;
   }
 
   .news .news-ft {
     margin: 0 40px;
   }
+  .news .news-item {
+    font-size: 16px;
+  }
+  .news .news-b {
+    width: 100px;
+    height: 30px;
+  }
 
   .intro .intro-banner {
-    min-height: 150px;
+    min-height: 160px;
   }
   .intro .intro-tt {
     font-size: 4.5vw;
@@ -918,18 +975,21 @@ div * {
   .intro .intro-btn {
     margin: 0 40px;
   }
+  .intro .intro-p {
+    font-size: 14px;
+  }
 
   .concept .cept-num {
     margin-bottom: 15px;
+  }
+  .concept .cept-label {
+    font-size: 26px;
   }
   .concept .cept-tt {
     font-size: 22px;
   }
   .concept .cept-img {
     width: 100%;
-  }
-  .concept .cept-img img {
-    height: 260px;
   }
   .concept .cept-wrap {
     padding: 20px 15px 30px;
@@ -968,7 +1028,8 @@ div * {
     bottom: -30px;
     background-color: #3e2318;
     width: 84%;
-    font-size: 12px;
+    font-size: 14px;
+    padding: 5px;
     min-height: 50px;
   }
 
@@ -1006,12 +1067,15 @@ div * {
   .precautions .precaut-label {
     font-size: 24px;
   }
+  .precautions .precaut-list li {
+    font-size: 16px;
+  }
 
   .treatment .trt-b {
     font-size: 22px;
   }
   .treatment .treat-cols {
-    margin: 0 -15px;
+    margin: 0 -25px;
   }
   .treatment .treat-txt {
     padding: 30px 20px;
@@ -1058,11 +1122,12 @@ div * {
   .footer-top .ft-logo img {
     width: 280px;
   }
-  .footer-top .call-f {
-    font-size: 50px;
-  }
   .footer-top .tkb-img img {
     height: auto;
+  }
+  .footer-top .ft-web {
+    height: 60px;
+    font-size: 18px;
   }
 
   .footer-bottom {
@@ -1073,17 +1138,25 @@ div * {
     height: 58px;
   }
   .btn-fix .bf-tt {
-    display: none;
+    font-size: 16px;
   }
   .btn-fix .bf-tt2 {
-    display: none;
+    font-size: 18px;
   }
   .btn-fix .bf-ic {
-    margin: 0 !important;
+    margin: 5px !important;
+  }
+  .btn-fix .bf-list li:nth-child(1) .bf-ic img {
+    width: 20px;
+    height: auto;
+  }
+  .btn-fix .bf-list li:nth-child(2) .bf-ic img {
+    width: 30px;
+    height: auto;
   }
 
   #totop {
-    bottom: 94px;
+    bottom: 58px;
     width: 50px;
     height: 50px;
   }
@@ -1178,9 +1251,6 @@ div * {
   .concept .cept-tt {
     font-size: 17px;
   }
-  .concept .cept-img img {
-    height: 220px;
-  }
   .concept .cept-label {
     font-size: 20px;
   }
@@ -1219,7 +1289,7 @@ div * {
     font-size: 20px;
   }
   .hospitality .hospi-img {
-    margin-bottom: 15px !important;
+    margin-bottom: 20px !important;
   }
   .hospitality .hospi-ig {
     margin-bottom: 20px;
@@ -1274,7 +1344,7 @@ div * {
     padding: 40px 0;
   }
   .precautions .precaut-label {
-    font-size: 20px;
+    font-size: 18px;
   }
   .precautions .precaut-list {
     padding: 30px 15px 15px;
@@ -1299,6 +1369,10 @@ div * {
   .treatment .trt-t {
     font-size: 14px;
     line-height: 1.6;
+    padding: 0 7px;
+  }
+  .treatment .trt-t::before, .treatment .trt-t::after {
+    width: 14px;
   }
   .treatment .trt-b {
     font-size: 18px;
@@ -1386,6 +1460,9 @@ div * {
     padding: 0px 0 40px;
   }
 
+  .footer-top .container {
+    padding: 0 15px;
+  }
   .footer-top .ft-wrapper {
     padding: 0 15px 0;
   }
@@ -1393,7 +1470,7 @@ div * {
     margin-bottom: 10px;
   }
   .footer-top .ft-logo img {
-    width: 70%;
+    width: 190px;
   }
   .footer-top .call-f {
     font-size: 30px;
@@ -1438,6 +1515,10 @@ div * {
   .sp375 {
     display: inherit;
   }
+
+  #totop {
+    bottom: 95px;
+  }
 }
 @media screen and (max-width: 320px) {
   .sp320 {
@@ -1450,6 +1531,10 @@ div * {
 
   .concept .cept-list {
     flex-wrap: wrap;
+  }
+
+  .hospitality .hospi-t {
+    font-size: 13px;
   }
 }
 

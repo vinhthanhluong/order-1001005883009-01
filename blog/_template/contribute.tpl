@@ -63,7 +63,7 @@ $current_category_name = $category_name;
                     "@type": "ListItem",
                     "position": 2,
                     "item": {
-                        "@id": "https://www.kawahara-dc.net/blog/{=$current_category_name=}",
+                        "@id": "https://www.kawahara-dc.net/blog/{=$category_url=}",
                         "name": "{=$current_category_name=}|{=$base_title=}｜高槻駅徒歩3分の歯医者｜河原歯科クリニック"
                     }
                 },

@@ -19,6 +19,7 @@ $(function () {
             this.heightTreat();
             this.staffSlide();
             this.anchorLink();
+            this.heightUnder();
         },
 
         visual: function () {
@@ -43,12 +44,28 @@ $(function () {
 
         toTop: function () {
             var _w = $(window).width();
+
+
             $(window).scroll(function () {
                 var st = $(window).scrollTop();
-                if (st > 20) {
-                    $('#totop').fadeIn();
+
+                if ($('#visual').length) {
+
+                    var offsetVis = $('#visual').offset().top;
+                    var heightVis = $('#visual').innerHeight();
+                    var visual = offsetVis + heightVis;
+                    if (st > visual) {
+                        $('#totop').fadeIn();
+                    } else {
+                        $('#totop').fadeOut();
+                    }
                 } else {
-                    $('#totop').fadeOut();
+
+                    if (st > 20) {
+                        $('#totop').fadeIn();
+                    } else {
+                        $('#totop').fadeOut();
+                    }
                 }
             });
 
@@ -68,8 +85,8 @@ $(function () {
                     speed: 1000,
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    // autoplay: true,
-                    // autoplaySpeed: 5000,
+                    autoplay: true,
+                    autoplaySpeed: 5000,
                     arrows: true,
                     centerMode: false,
                     centerPadding: 0,
@@ -106,12 +123,20 @@ $(function () {
                 }
 
                 if ($(window).width() <= 750) {
-                    if (st > 10) {
+                    var offsetVis = $('.vis-man').offset().top;
+                    var heightVis = $('.vis-man').innerHeight();
+                    var visual = offsetVis + heightVis;
+
+                    if (st > visual) {
                         $('.btn-fix').css('transform', 'translateY(0%)');
                     } else {
                         $('.btn-fix').css('transform', 'translateY(100%)');
                     }
                 }
+
+
+
+
             });
 
 
@@ -134,10 +159,28 @@ $(function () {
 
                 var arrayHeight = loopH(item);
                 var bigNumber = Math.max.apply(Math, arrayHeight)
-                $('.treat-item .treat-txt').css('min-height' , bigNumber);
+                $('.treat-item .treat-txt').css('min-height', bigNumber);
             }
 
         },
+
+        heightUnder: function () {
+            var item = $('#und-slick .staff_ul01');
+            function loopH(args) {
+                var _aLoop = [];
+                for (let i = 0; i < args.length; i++) {
+                    var element = item[i];
+                    var _mHeight = $(element).outerHeight();
+                    _aLoop.push(_mHeight)
+                }
+                return _aLoop;
+            }
+
+            var arrayHeight = loopH(item);
+            var bigNumber = Math.max.apply(Math, arrayHeight)
+            $('#und-slick .staff_ul01').css('min-height', bigNumber);
+        },
+
 
         staffSlide: function () {
             if ($('#und-slick').length > 0) {
@@ -153,7 +196,7 @@ $(function () {
                 });
             }
         },
-        
+
         anchorLink: function () {
             $(window).on('load', function () {
                 "use strict";
