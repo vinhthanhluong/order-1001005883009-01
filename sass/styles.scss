@@ -118,18 +118,18 @@ body {
     font-weight: 300;
     color: #171e27;
 
-    &::-webkit-scrollbar {
-        width: 0;
-    }
+    // &::-webkit-scrollbar {
+    //     width: 0;
+    // }
 
-    &::-webkit-scrollbar-thumb {
-        background: transparent;
-        border-radius: 990px;
-    }
+    // &::-webkit-scrollbar-thumb {
+    //     background: transparent;
+    //     border-radius: 990px;
+    // }
 
-    &::-webkit-scrollbar-track {
-        background: transparent;
-    }
+    // &::-webkit-scrollbar-track {
+    //     background: transparent;
+    // }
 }
 
 .index {
@@ -1197,7 +1197,7 @@ body {
     }
 
     .hospi-ig {
-        transform: translateX(-48px);
+        // transform: translateX(-48px);
         float: left;
         margin-right: 76px;
         width: 960px;
@@ -1433,7 +1433,8 @@ body {
 
     &::before {
         content: "";
-        background-image: radial-gradient(circle, rgba(85, 52, 21, 0.9) 0%, #412815 47%, #28170c 100%);
+        background: radial-gradient(circle, rgba(85, 52, 21, 0.9) 0%, #412815 47%, #28170c 100%);
+        background: url('../images/bg-precautions.jpg');
         width: 100%;
         height: 100%;
         position: absolute;

@@ -333,7 +333,7 @@ div * {
   }
 
   .concept {
-    padding: 0 0 60px;
+    padding: 0 0 100px;
   }
   .concept::before {
     top: 36px;

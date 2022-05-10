@@ -133,10 +133,6 @@ $(function () {
                         $('.btn-fix').css('transform', 'translateY(100%)');
                     }
                 }
-
-
-
-
             });
 
 
@@ -192,7 +188,15 @@ $(function () {
                     slidesToScroll: 1,
                     arrows: true,
                     variableWidth: true,
-                    autoplay: true
+                    autoplay: false,
+                    responsive: [
+                        {
+                          breakpoint: 751,
+                          settings: {
+                            variableWidth: false,
+                          }
+                        }
+                      ]
                 });
             }
         },
