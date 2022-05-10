@@ -562,7 +562,7 @@ body {
 }
 #visual .visual-hd::before {
   content: "";
-  width: calc(100% - 106px);
+  width: calc(calc(100% - 106px));
   height: 1px;
   background-color: #a6884c;
   position: absolute;
@@ -831,7 +831,7 @@ body {
 }
 .concept .cept-list li {
   width: 600px;
-  width: 33.3333333333%;
+  width: calc(100% / 3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1068,7 +1068,7 @@ body {
   margin: -30px;
 }
 .equipment .equi-col {
-  width: 33.3333333333%;
+  width: calc(100% / 3);
   padding: 30px;
 }
 .equipment .equi-item {
@@ -1294,10 +1294,10 @@ body {
 .treatment .trt-t::before, .treatment .trt-t::after {
   content: "";
   width: 20px;
-  height: 1px;
-  background-color: #171e27;
+  height: 2px;
   position: absolute;
   top: 50%;
+  border-bottom: 1px solid #171e27;
 }
 .treatment .trt-t::before {
   left: 0;
@@ -1410,7 +1410,7 @@ body {
   margin-top: 74px;
 }
 .treatment .treat-list li {
-  width: 33.3333333333%;
+  width: calc(100% / 3);
   position: relative;
   cursor: pointer;
 }

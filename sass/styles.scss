@@ -1548,10 +1548,11 @@ body {
         &::after {
             content: "";
             width: 20px;
-            height: 1px;
-            background-color: #171e27;
+            height: 2px;
+            // background-color: #171e27;
             position: absolute;
             top: 50%;
+            border-bottom: 1px solid #171e27;
         }
         &::before {
             left: 0;

@@ -853,6 +853,67 @@ div * {
 
   /*************************** end Footer ****************************/
 }
+@media screen and (min-width: 640px) and (max-width: 750px) {
+  .concept .cept-txt p {
+    font-size: 26px;
+  }
+  .concept .cept-lst li {
+    font-size: 26px;
+  }
+
+  .knowledge .know-desc {
+    font-size: 26px;
+  }
+  .knowledge .know-list li {
+    font-size: 20px;
+  }
+
+  .hospitality .hospi-desc {
+    font-size: 26px;
+  }
+
+  .equipment .equi-desc {
+    font-size: 26px;
+  }
+
+  .cleanliness .liness-desc {
+    font-size: 26px;
+  }
+
+  .precautions .precaut-desc {
+    font-size: 26px;
+  }
+  .precautions .precaut-ft {
+    font-size: 26px;
+  }
+  .precautions .precaut-list li {
+    font-size: 20px;
+  }
+
+  .treatment .treat-desc {
+    font-size: 26px;
+  }
+  .treatment .txt-title {
+    font-size: 30px;
+  }
+  .treatment .txt-desc {
+    font-size: 26px;
+  }
+  .treatment .lst-tt {
+    font-size: 20px;
+  }
+  .treatment .lst-title {
+    font-size: 26px;
+  }
+
+  .doctor .doctor-desc {
+    font-size: 26px;
+  }
+
+  .footer-mid .fm-desc {
+    font-size: 26px;
+  }
+}
 @media screen and (max-width: 640px) {
   .sp640 {
     display: inherit;
